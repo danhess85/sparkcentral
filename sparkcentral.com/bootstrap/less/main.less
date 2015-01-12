@@ -21,6 +21,10 @@ li{
 	list-style: none;
 }
 
+a, a:hover {
+	text-decoration: none;
+}
+
 header{ 
 	background-color: @brand-primary;
 	padding: @padding-s 0;
@@ -56,7 +60,7 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 	h2{
 		color: #fff;
 		margin: 0 0 @margin-s 0;
-		padding:top
+		padding:top;
 	}
 	a{
 		text-align: center;
@@ -193,6 +197,8 @@ footer{
 //product
 
 .gartner{
+	margin: @margin auto;
+	text-align: center;
 	.row{
 		// .border;
 	}
@@ -220,10 +226,6 @@ footer{
 	}
 }
 
-.gartner{
-	margin: @margin 0;
-	text-align: center;
-}
 .img{
 	text-align: center; 
 }
