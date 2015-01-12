@@ -1,0 +1,285 @@
+@import "bootstrap.less";
+
+//global
+.right{
+	float: right;
+}
+
+.border{
+	border-bottom: @border;
+	padding-bottom: @padding;
+}
+
+ul.styled{
+	li{
+		font-weight: 600;
+		margin-bottom: 5px;
+	}
+}
+
+li{
+	list-style: none;
+}
+
+header{ 
+	background-color: @brand-primary;
+	padding: @padding-s 0;
+	h1{
+		text-transform: uppercase;
+	}
+	p{
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+	}
+}
+
+//nav bar
+.logo{
+	display: block;
+	margin-top: 15px;
+}
+
+nav button{
+	margin-top: 20px;
+}
+
+body.product #product-page > a , body.solutions #solutions-page > a, body.why-us #why-us-page > a, body.company #company-page > a, body.clients-page #clients-page > a, body.team #team-page > a{
+	color: @brand-primary;
+}
+
+//Demo
+.demo{
+	background: @brand-primary;
+	text-align: center;
+	padding: @padding-m 0;
+	h2{
+		color: #fff;
+		margin: 0 0 @margin-s 0;
+		padding:top
+	}
+	a{
+		text-align: center;
+	}
+}
+
+.testimonial{
+	margin-bottom: @margin;
+	background: url("../img/jerry.jpg") no-repeat scroll right center / 50% auto rgba(0, 0, 0, 0);
+	background-color: @gray-lighter;
+	padding: 100px 0;
+	.lead{
+		margin-top: @margin-s;
+	}
+}
+
+#jerry{
+	width: 100%;
+}
+
+//homepage
+.jumbotron.home{
+	height: 610px;
+	position: relative;
+	background: linear-gradient(
+		rgba(45, 50, 56, 0.8), 
+		rgba(45, 50, 56, 0.8)
+		),
+	url(../img/header-image.jpg);
+	background-size: cover;
+	text-align: center;
+	width: 100%;
+	clear: both;
+	background-blend-mode: multiply;
+	h1{
+		color: #FFF;
+		margin-top: 10%;
+		// font-family: "BrandonGrotesque-Bold",sans-serif;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 40px;
+	}
+	p{
+		color: #FFF;
+		padding: 0 15%;
+	}
+	.btn{
+		margin-right: 20px;
+	}
+}
+
+.clients{
+	background: @brand-primary;
+	padding: 10px 0;
+	li{
+		list-style: none;
+		display: inline-block;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.client{
+	img{
+		width: 100%;
+	}
+}
+
+.news-notification{
+	border-top: @border;
+	border-bottom: @border;
+	margin-bottom: @margin-m;
+	p{
+		text-align: center;
+		margin: 8px 0;
+	}
+}
+
+.value-props{
+	margin-bottom: @margin;
+	text-align: center;
+	h3, p{
+		text-align: left;
+	}
+	img{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	h2{
+		margin-bottom: @margin-m;
+		color: #4F5154;
+		font-weight: 300;
+	}
+}
+
+.news{
+	margin-bottom: @margin;
+	h3{
+		margin-top: 0;
+	}
+	h5{
+		margin-bottom: 0;
+	}
+	cite{
+		display: block;
+		margin-bottom: 15px;
+	}
+	p{
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+footer{
+	background: #173044;
+	padding: @padding-s 0; 
+	h5{ color: #fff; margin-bottom: 5px; }
+	a, li{ color: #8C99A3; }
+	.social li{
+		font-family: "socialico";
+		display: inline-block;
+		a{
+			font-size: 30px;
+			line-height: 1;
+			margin-right: 5px;
+		}
+	}
+}
+
+//product
+
+.gartner{
+	.row{
+		// .border;
+	}
+	img{
+		margin-bottom: @margin-s;
+	}
+}
+
+.tour{
+	h2{ 
+		color: @brand-primary;
+		font-size: 30px;
+	}
+	ul{
+		margin-bottom: @margin-s;
+	}
+	.row{
+		margin-bottom: 150px;
+		padding-bottom: 150px;
+		border-bottom: @border;
+		&:last-child{
+			border-bottom: none;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.gartner{
+	margin: @margin 0;
+	text-align: center;
+}
+.img{
+	text-align: center; 
+}
+
+
+//Solutions
+
+.success-team{
+	margin-bottom: @margin;
+	border-bottom: @border;
+	padding-bottom: @padding;
+}
+
+.advisory-board{
+	margin-bottom: @margin;
+	text-align: center;
+
+
+	img{
+		width: 80%;
+	}
+}
+
+
+
+//Leadership
+
+.vision{
+	margin: @margin 0;
+	.border;
+	p{
+		text-align: center;
+	}
+}
+
+.leadership{
+	margin-bottom: @margin;
+	img{
+		width: 100%;
+	}
+}
+
+.investors{
+	margin-bottom: @margin;
+}
+
+
+//Why us
+
+.client-list{
+	text-align: center;
+	margin-bottom: @margin-m;
+	img{
+		margin-bottom: 10px;
+		width: 80%;
+	}
+}
+
+
+
