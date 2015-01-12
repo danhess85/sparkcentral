@@ -6217,8 +6217,20 @@ body.team #team-page > a {
 .clients li:last-child {
   margin-right: 0;
 }
+.client {
+  margin: 60px 0;
+}
 .client img {
   width: 100%;
+}
+.client h2 {
+  margin-top: 0;
+}
+.client.client-wide p {
+  padding-right: 30px;
+}
+.case-study-image {
+  margin-bottom: 30px;
 }
 .news-notification {
   border-top: solid 1px #d4d5d6;
