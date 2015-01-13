@@ -6145,6 +6145,7 @@ a:hover {
 header {
   background-color: #4690dc;
   padding: 30px 0;
+  background-image: url(../img/background-pattern.png);
 }
 header h1 {
   text-transform: uppercase;
@@ -6447,4 +6448,154 @@ footer .social li a {
 .client-list img {
   margin-bottom: 10px;
   width: 80%;
+}
+.career-intro {
+  background: #edeff0;
+  padding: 60px 0;
+}
+#open-positions {
+  margin-bottom: 30px;
+}
+#open-positions h2 {
+  margin-bottom: 30px;
+}
+.employee-testimonial {
+  margin-bottom: 30px;
+}
+.values {
+  position: relative;
+  background: url("../img/perks-background.jpg") no-repeat scroll center top / cover rgba(0, 0, 0, 0);
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.values h2 {
+  color: $blue;
+  margin-bottom: 10px;
+}
+.values p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.values p:last-child {
+  margin-bottom: 0;
+}
+.values-matte {
+  background: #FFF;
+  padding: 40px;
+  margin-top: 65px;
+}
+.perks {
+  padding: 60px 0 60px 0;
+}
+.perks h2 {
+  margin-bottom: 30px;
+}
+.perks span {
+  display: inline-block;
+  margin-left: 20px;
+  width: 80%;
+}
+.perks-copy {
+  color: #fff;
+  margin: 130px 0;
+}
+.perks-copy h2 {
+  color: #fff;
+}
+.perks-copy li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 18px;
+}
+.perks img {
+  float: left;
+}
+.position {
+  border-top: solid 1px #d4d5d6;
+  border-bottom: solid 1px #d4d5d6;
+  padding: 20px 0 0 0;
+}
+.job-roles {
+  background: #edeff0;
+  margin-bottom: 30px;
+}
+.role {
+  text-align: center;
+  padding: 40px;
+}
+.role img {
+  margin-bottom: 20px;
+}
+.role h3 {
+  margin-bottom: 10px;
+}
+.jobs {
+  margin-bottom: 40px;
+  background: #edeff0;
+  padding: 40px 0;
+  border-top: solid 3px #4690dc;
+  text-align: center;
+  -webkit-transition: 300ms ease-out;
+  -moz-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  font-size: 16px;
+  display: block;
+}
+.jobs:hover {
+  background: #4690dc;
+  color: #FFF;
+}
+.jobs:hover span {
+  color: #FFF;
+}
+.jobs span {
+  display: block;
+  font-size: 11px;
+  font-family: "BrandonGrotesque-Bold", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #979BA1;
+}
+.design-job {
+  border-top: solid 3px #FFC600;
+}
+.marketing-job {
+  border-top: solid 3px #F83700;
+}
+.sales-job {
+  border-top: solid 3px #00C07E;
+}
+.demo-page {
+  position: relative;
+  background: linear-gradient(rgba(45, 50, 56, 0.8), rgba(45, 50, 56, 0.8)), url(../img/header-image.jpg) no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  clear: both;
+  background-blend-mode: multiply;
+}
+.demo-page footer {
+  display: none;
+}
+.demo-page nav {
+  display: none;
+}
+.demo-page .jumbotron h1 {
+  color: #FFF;
+  margin-top: 10%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+}
+.demo-page .jumbotron p {
+  color: #FFF;
+  padding: 0 15%;
+}
+.demo-page .jumbotron .btn {
+  margin-right: 20px;
+}
+.demo-page .submit > input {
+  background: #4690dc;
 }

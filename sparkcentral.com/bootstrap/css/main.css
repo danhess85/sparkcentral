@@ -6113,6 +6113,15 @@ button.close {
     display: none !important;
   }
 }
+* {
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
 .right {
   float: right;
 }
@@ -6120,15 +6129,23 @@ button.close {
   border-bottom: solid 1px #d4d5d6;
   padding-bottom: 100px;
 }
+.btn {
+  transition: all 0.2s ease;
+}
 ul.styled li {
   font-weight: 600;
 }
 li {
   list-style: none;
 }
+a,
+a:hover {
+  text-decoration: none;
+}
 header {
   background-color: #4690dc;
   padding: 30px 0;
+  background-image: url(../img/background-pattern.png);
 }
 header h1 {
   text-transform: uppercase;
@@ -6137,6 +6154,9 @@ header p {
   color: #fff;
   font-size: 18px;
   text-align: center;
+}
+nav li {
+  font-size: 1.4rem;
 }
 .logo {
   display: block;
@@ -6153,6 +6173,9 @@ body.clients-page #clients-page > a,
 body.team #team-page > a {
   color: #4690dc;
 }
+#demo-link button {
+  margin-top: 23px;
+}
 .demo {
   background: #4690dc;
   text-align: center;
@@ -6168,12 +6191,13 @@ body.team #team-page > a {
 }
 .testimonial {
   margin-bottom: 100px;
-  background: url("../img/jerry.jpg") no-repeat scroll right center / 50% auto rgba(0, 0, 0, 0);
   background-color: #edeff0;
-  padding: 100px 0;
 }
 .testimonial .lead {
-  margin-top: 30px;
+  margin-top: 60px;
+}
+.testimonial .testimonial-image {
+  padding-right: 0;
 }
 #jerry {
   width: 100%;
@@ -6202,6 +6226,19 @@ body.team #team-page > a {
 .jumbotron.home .btn {
   margin-right: 20px;
 }
+.jumbotron.home .btn-primary {
+  border: 2px solid #4690dc;
+}
+.jumbotron.home .btn-primary:hover {
+  border-color: #2676c9;
+}
+footer li {
+  font-size: 1.4rem;
+}
+.contact a,
+.social a {
+  transition: color 0.2s ease;
+}
 .clients {
   background: #4690dc;
   padding: 10px 0;
@@ -6213,8 +6250,75 @@ body.team #team-page > a {
 .clients li:last-child {
   margin-right: 0;
 }
+.client {
+  margin: 60px 0;
+}
 .client img {
   width: 100%;
+}
+.client h2 {
+  margin-top: 0;
+}
+.client-wide {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.client-wide p,
+.client-wide h2,
+.client-wide a {
+  color: #fff;
+  text-align: center;
+}
+.client-wide p {
+  margin-bottom: 30px;
+}
+.client-wide.lyft-styled .client-wide-info {
+  padding: 30px 0 30px 15px;
+}
+.client-wide.lyft-styled .client-wide-image img {
+  position: relative;
+  right: -16px;
+}
+.client-wide.mailbox-styled .client-wide-info {
+  padding: 30px 15px 30px 0;
+}
+.client-wide.mailbox-styled .client-wide-image img {
+  position: relative;
+  left: -15px;
+}
+.case-study-image {
+  margin-bottom: 30px;
+}
+.btn-container {
+  display: block;
+  text-align: center;
+}
+.lyft-styled {
+  background: #00B4AE;
+}
+.lyft-styled h2 {
+  overflow: hidden;
+  text-indent: -9999em;
+  background: url('../img/lyft-logo-white.svg') no-repeat center center;
+  background-size: 100% 43px;
+  margin-bottom: 15px;
+}
+.lyft-styled .btn-container a:hover {
+  color: #00B4AE;
+}
+.mailbox-styled {
+  background: #51b9db;
+}
+.mailbox-styled h2 {
+  overflow: hidden;
+  text-indent: -9999em;
+  background: url('../img/mailbox-logo.png') no-repeat center center;
+  background-size: auto 55px;
+  height: 55px;
+  margin-bottom: 13px;
+}
+.mailbox-styled .btn-container a:hover {
+  color: #51b9db;
 }
 .news-notification {
   border-top: solid 1px #d4d5d6;
@@ -6304,6 +6408,9 @@ footer .social li a {
 }
 .img {
   text-align: center;
+}
+.img img {
+  width: 100%;
 }
 .success-team {
   margin-bottom: 100px;
