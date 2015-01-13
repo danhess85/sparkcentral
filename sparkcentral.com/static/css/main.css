@@ -6173,7 +6173,7 @@ body.team #team-page > a {
   color: #4690dc;
 }
 #demo-link button {
-  margin-top: 23px;
+  margin-top: 22px;
 }
 .demo {
   background: #4690dc;
@@ -6261,6 +6261,7 @@ footer li {
 .client-wide {
   margin-left: 15px;
   margin-right: 15px;
+  min-height: 325px;
 }
 .client-wide p,
 .client-wide h2,
@@ -6299,7 +6300,7 @@ footer li {
   overflow: hidden;
   text-indent: -9999em;
   background: url('../img/lyft-logo-white.svg') no-repeat center center;
-  background-size: 100% 43px;
+  background-size: 59px 43px;
   margin-bottom: 15px;
 }
 .lyft-styled .btn-container a:hover {
