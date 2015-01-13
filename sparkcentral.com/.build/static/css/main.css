@@ -6266,6 +6266,9 @@ footer a {
 .client h2 {
   margin-top: 0;
 }
+.client.border {
+  padding-bottom: 60px;
+}
 .client-wide {
   margin-left: 15px;
   margin-right: 15px;
@@ -6299,6 +6302,48 @@ footer a {
 }
 .case-study-image {
   margin-bottom: 30px;
+}
+.case-study-tile {
+  position: relative;
+}
+.case-study-tile img {
+  margin-bottom: 0;
+}
+.case-study-tile .overlay {
+  position: absolute;
+  display: block;
+  width: 92%;
+  text-align: center;
+  padding-top: 30px;
+  z-index: 10;
+}
+.case-study-tile .overlay img {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  width: 45%;
+  margin: 0 auto;
+}
+.case-study-tile .overlay .hover-info {
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.case-study-tile .overlay .hover-info p {
+  width: 100%;
+  padding: 0 15px;
+}
+.case-study-tile:hover .overlay img {
+  opacity: 0;
+}
+.case-study-tile:hover .hover-info {
+  top: 30px;
+  opacity: 1;
 }
 .btn-container {
   display: block;
