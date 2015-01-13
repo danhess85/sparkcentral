@@ -6116,6 +6116,12 @@ button.close {
 * {
   -webkit-font-smoothing: antialiased;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
 .right {
   float: right;
 }
@@ -6147,6 +6153,9 @@ header p {
   color: #fff;
   font-size: 18px;
   text-align: center;
+}
+nav li {
+  font-size: 1.4rem;
 }
 .logo {
   display: block;
@@ -6186,6 +6195,9 @@ body.team #team-page > a {
 .testimonial .lead {
   margin-top: 60px;
 }
+.testimonial .testimonial-image {
+  padding-right: 0;
+}
 #jerry {
   width: 100%;
 }
@@ -6218,6 +6230,13 @@ body.team #team-page > a {
 }
 .jumbotron.home .btn-primary:hover {
   border-color: #2676c9;
+}
+footer li {
+  font-size: 1.4rem;
+}
+.contact a,
+.social a {
+  transition: color 0.2s ease;
 }
 .clients {
   background: #4690dc;
