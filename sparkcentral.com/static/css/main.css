@@ -6117,6 +6117,8 @@ button.close {
 }
 * {
   -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .right {
   float: right;
@@ -6138,6 +6140,10 @@ a,
 a:hover {
   text-decoration: none;
 }
+a:focus,
+a:hover:focus {
+  outline: none;
+}
 header {
   background-color: #4690dc;
   padding: 30px 0;
@@ -6155,7 +6161,7 @@ header p {
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 nav li {
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 .logo {
   display: block;
@@ -6173,7 +6179,10 @@ body.team #team-page > a {
   color: #4690dc;
 }
 #demo-link button {
-  margin-top: 22px;
+  margin-top: 21px;
+}
+#demo-link button a {
+  font-size: 14px;
 }
 .demo {
   background: #4690dc;
@@ -6234,8 +6243,7 @@ body.team #team-page > a {
 footer li {
   font-size: 1.4rem;
 }
-.contact a,
-.social a {
+footer a {
   transition: color 0.2s ease;
 }
 .clients {
@@ -6263,6 +6271,9 @@ footer li {
   margin-right: 15px;
   min-height: 325px;
 }
+.client-wide:first-child {
+  margin-top: 0;
+}
 .client-wide p,
 .client-wide h2,
 .client-wide a {
@@ -6273,14 +6284,14 @@ footer li {
   margin-bottom: 30px;
 }
 .client-wide.lyft-styled .client-wide-info {
-  padding: 30px 0 30px 15px;
+  padding: 60px 0 30px 15px;
 }
 .client-wide.lyft-styled .client-wide-image img {
   position: relative;
   right: -16px;
 }
 .client-wide.mailbox-styled .client-wide-info {
-  padding: 30px 15px 30px 0;
+  padding: 60px 15px 30px 0;
 }
 .client-wide.mailbox-styled .client-wide-image img {
   position: relative;
@@ -6396,18 +6407,26 @@ header.product {
 .tour h2 {
   color: #4690dc;
   font-size: 24px;
+  margin-top: 0;
 }
 .tour ul {
   margin-bottom: 30px;
 }
+.tour ul li {
+  list-style-type: disc;
+  margin-left: 19px;
+}
 .tour .row {
-  margin-bottom: 150px;
-  padding-bottom: 150px;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
   border-bottom: solid 1px #d4d5d6;
 }
 .tour .row:last-child {
   border-bottom: none;
   margin-bottom: 0;
+}
+.tour .row img {
+  max-height: 340px;
 }
 .img {
   text-align: center;
@@ -6417,6 +6436,10 @@ header.product {
 }
 .success-team {
   margin-bottom: 100px;
+}
+.success-team li {
+  list-style-type: disc;
+  margin-left: 19px;
 }
 .advisory-board {
   border-bottom: solid 1px #d4d5d6;
@@ -6453,6 +6476,14 @@ header.product {
 .investors {
   margin-bottom: 100px;
 }
+.investors .logo-splitrock {
+  width: 75%;
+  padding-top: 45px;
+  margin-left: 55px;
+}
+.investors .logo-socialcapital {
+  margin-left: 55px;
+}
 .client-list {
   text-align: center;
   margin-bottom: 60px;
@@ -6481,7 +6512,7 @@ header.career {
   position: relative;
   background: url("../img/perks-background.jpg") no-repeat scroll center top / cover rgba(0, 0, 0, 0);
   background-size: cover;
-  height: 650px;
+  height: 682px;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -6499,7 +6530,7 @@ header.career {
 .values-matte {
   background: #FFF;
   padding: 40px;
-  margin-top: 65px;
+  margin: 60px 0;
 }
 .perks {
   padding: 60px 0 60px 0;
@@ -6511,6 +6542,9 @@ header.career {
   display: inline-block;
   margin-left: 20px;
   width: 80%;
+}
+.perks h3 {
+  margin-top: 7px;
 }
 .perks-copy {
   color: #fff;
