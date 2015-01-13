@@ -6,14 +6,6 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-html {
-	font-size: 62.5%;
-}
-
-body {
-	font-size: 1.6rem;
-}
-
 .right{
 	float: right;
 }
@@ -41,18 +33,26 @@ a, a:hover {
 	text-decoration: none;
 }
 
+
+.text-shadow (@string: 0 0 15px rgba(0, 0, 0, 0.25)) {
+	text-shadow: @string;
+}
+
 header{ 
 	background-color: @brand-primary;
 	padding: @padding-s 0;
 	background-image: 	url(../img/background-pattern.png);
-
+	margin-bottom: @margin-m;
 	h1{
 		text-transform: uppercase;
+		.text-shadow;
+
 	}
 	p{
 		color: #fff;
 		font-size: 18px;
 		text-align: center;
+		.text-shadow;
 	}
 }
 
@@ -331,8 +331,12 @@ footer{
 
 //product
 
+header.product{
+	margin-bottom: @margin;
+}
+
 .gartner{
-	margin: @margin auto;
+	margin-bottom: @margin;
 	text-align: center;
 	.row{
 		// .border;
@@ -373,26 +377,36 @@ footer{
 
 .success-team{
 	margin-bottom: @margin;
-	border-bottom: @border;
-	padding-bottom: @padding;
+
 }
 
+
 .advisory-board{
+	border-bottom: @border;
 	margin-bottom: @margin;
+	padding-bottom: @padding;
 	text-align: center;
-
-
 	img{
 		width: 80%;
 	}
+	h2{
+		margin: 0 0 20px;
+	}
+	h5{
+		margin: 0;
+	}
+	p{
+		margin-bottom: @margin-m;
+	}
 }
+
 
 
 
 //Leadership
 
 .vision{
-	margin: @margin 0;
+	margin-bottom: @margin;
 	.border;
 	p{
 		text-align: center;
@@ -427,7 +441,7 @@ footer{
 //Team
 
 header.career{
-	// margin-bottom: @margin;	
+	margin-bottom: 0;
 }
 
 .career-intro{
