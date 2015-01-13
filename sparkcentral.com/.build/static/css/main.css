@@ -6408,6 +6408,9 @@ footer .social li a {
 .img {
   text-align: center;
 }
+.img img {
+  width: 100%;
+}
 .success-team {
   margin-bottom: 100px;
   border-bottom: solid 1px #d4d5d6;
