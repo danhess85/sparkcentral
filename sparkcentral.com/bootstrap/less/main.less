@@ -2,6 +2,10 @@
 
 
 //global
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
 .right{
 	float: right;
 }
@@ -9,6 +13,10 @@
 .border{
 	border-bottom: @border;
 	padding-bottom: @padding;
+}
+
+.btn {
+	transition: all 0.2s ease;
 }
 
 ul.styled{
@@ -52,6 +60,12 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 	color: @brand-primary;
 }
 
+#demo-link {
+	button {
+		margin-top: 23px;
+	}
+}
+
 //Demo
 .demo{
 	background: @brand-primary;
@@ -69,11 +83,11 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 
 .testimonial{
 	margin-bottom: @margin;
-	background: url("../img/jerry.jpg") no-repeat scroll right center / 50% auto rgba(0, 0, 0, 0);
+	// background: url("../img/jerry.jpg") no-repeat scroll right center / 50% auto rgba(0, 0, 0, 0);
 	background-color: @gray-lighter;
-	padding: 100px 0;
+	// padding: 100px 0;
 	.lead{
-		margin-top: @margin-s;
+		margin-top: @margin-m;
 	}
 }
 
@@ -110,6 +124,12 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 	}
 	.btn{
 		margin-right: 20px;
+	}
+	.btn-primary {
+		border: 2px solid #4690dc;
+		&:hover {
+			border-color: #2676c9;
+		}
 	}
 }
 
@@ -185,6 +205,14 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 		text-indent: -9999em;
 		background: url('../img/lyft-logo-white.svg') no-repeat center center;
 		background-size: 100% 43px;
+		margin-bottom: 15px;
+	}
+	.btn-container {
+		a {
+			&:hover {
+				color: #00B4AE;
+			}
+		}
 	}
 }
 
@@ -196,6 +224,14 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 		background: url('../img/mailbox-logo.png') no-repeat center center;
 		background-size: auto 55px;
 		height: 55px;
+		margin-bottom: 13px;
+	}
+	.btn-container {
+		a {
+			&:hover {
+				color: #51b9db;
+			}
+		}
 	}
 }
 
