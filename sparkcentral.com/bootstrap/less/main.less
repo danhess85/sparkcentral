@@ -192,6 +192,9 @@ footer {
 	h2 {
 		margin-top: 0;
 	}
+	&.border {
+		padding-bottom: 60px;
+	}
 }
 
 .client-wide {
@@ -234,6 +237,55 @@ footer {
 
 .case-study-image {
 	margin-bottom: @margin-s;
+}
+
+.case-study-tile {
+	position: relative;
+	// overflow: hidden;
+	// min-height: 235px;
+	img {
+		margin-bottom: 0;
+	}
+	.overlay {
+		position: absolute;
+		display: block;
+		width: 92%;
+		text-align: center;
+		padding-top: @padding-s;
+		z-index: 10;
+		img {
+			opacity: 1;
+			transition: opacity 0.2s ease;
+			width: 45%;
+			margin: 0 auto;
+		}
+		.hover-info {
+			color: #fff;
+			position: absolute;
+			top: 40px;
+			left: 0;
+			width: 100%;
+			padding: 0;
+			text-align: center;
+			opacity: 0;
+			transition: all 0.2s ease;
+			p {
+				width: 100%;
+				padding: 0 15px;
+			}
+		}
+	}
+	&:hover {
+		.overlay {
+			img {
+				opacity: 0;
+			}
+		}
+		.hover-info {
+			top: 30px;
+			opacity: 1;
+		}
+	}
 }
 
 .btn-container {
