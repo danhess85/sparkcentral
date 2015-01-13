@@ -6226,11 +6226,58 @@ body.team #team-page > a {
 .client h2 {
   margin-top: 0;
 }
-.client.client-wide p {
-  padding-right: 30px;
+.client-wide {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.client-wide p,
+.client-wide h2,
+.client-wide a {
+  color: #fff;
+  text-align: center;
+}
+.client-wide p {
+  margin-bottom: 30px;
+}
+.client-wide.lyft-styled .client-wide-info {
+  padding: 30px 0 30px 15px;
+}
+.client-wide.lyft-styled .client-wide-image img {
+  position: relative;
+  right: -16px;
+}
+.client-wide.mailbox-styled .client-wide-info {
+  padding: 30px 15px 30px 0;
+}
+.client-wide.mailbox-styled .client-wide-image img {
+  position: relative;
+  left: -15px;
 }
 .case-study-image {
   margin-bottom: 30px;
+}
+.btn-container {
+  display: block;
+  text-align: center;
+}
+.lyft-styled {
+  background: #00B4AE;
+}
+.lyft-styled h2 {
+  overflow: hidden;
+  text-indent: -9999em;
+  background: url('../img/lyft-logo-white.svg') no-repeat center center;
+  background-size: 100% 43px;
+}
+.mailbox-styled {
+  background: #51b9db;
+}
+.mailbox-styled h2 {
+  overflow: hidden;
+  text-indent: -9999em;
+  background: url('../img/mailbox-logo.png') no-repeat center center;
+  background-size: auto 55px;
+  height: 55px;
 }
 .news-notification {
   border-top: solid 1px #d4d5d6;

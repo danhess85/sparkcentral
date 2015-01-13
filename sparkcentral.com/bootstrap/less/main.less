@@ -133,15 +133,70 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 	h2 {
 		margin-top: 0;
 	}
-	&.client-wide {
-		p {
-			padding-right: @padding-s;
+}
+
+.client-wide {
+	margin-left: 15px;
+	margin-right: 15px;
+	p, h2, a {
+		color: #fff;
+		text-align: center;
+	}
+	p {
+		margin-bottom: @margin-s;
+	}
+	&.lyft-styled {
+		.client-wide-info {
+			padding: @padding-s 0 @padding-s 15px;
+		}
+		.client-wide-image {
+			img {
+				position: relative;
+				right: -16px;
+			}
+		}
+	}
+	&.mailbox-styled {
+		.client-wide-info {
+			padding: @padding-s 15px @padding-s 0;
+		}
+		.client-wide-image {
+			img {
+				position: relative;
+				left: -15px;
+			}
 		}
 	}
 }
 
 .case-study-image {
 	margin-bottom: @margin-s;
+}
+
+.btn-container {
+	display: block;
+	text-align: center;
+}
+
+.lyft-styled {
+	background: #00B4AE;
+	h2 {
+		overflow: hidden;
+		text-indent: -9999em;
+		background: url('../img/lyft-logo-white.svg') no-repeat center center;
+		background-size: 100% 43px;
+	}
+}
+
+.mailbox-styled {
+	background: #51b9db;
+	h2 {
+		overflow: hidden;
+		text-indent: -9999em;
+		background: url('../img/mailbox-logo.png') no-repeat center center;
+		background-size: auto 55px;
+		height: 55px;
+	}
 }
 
 .news-notification{
