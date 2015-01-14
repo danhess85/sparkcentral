@@ -6525,6 +6525,9 @@ header.product {
 .success-team {
   margin-bottom: 100px;
 }
+.success-team .styled {
+  margin-bottom: 0;
+}
 .success-team li {
   list-style-type: circle;
   margin-left: 19px;
