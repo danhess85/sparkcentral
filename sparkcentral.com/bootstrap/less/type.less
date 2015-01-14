@@ -66,10 +66,10 @@ h6, .h6 {
 }
 
 h1, .h1 { font-size: @font-size-h1; font-family: 'BrandonGrotesque-Bold'; color: #fff; text-align: center; }
-h2, .h2 { font-size: @font-size-h2; color: @brand-primary; font-weight: 300;}
-h3, .h3 { font-size: @font-size-h3; color: @brand-primary;}
+h2, .h2 { font-size: @font-size-h2; color: @brand-primary; font-weight: 300; margin-bottom: @margin-s; margin-top: 0;}
+h3, .h3 { font-size: @font-size-h3; color: @brand-primary; font-weight: 600;}
 h4, .h4 { font-size: @font-size-h4; }
-h5, .h5 { font-size: @font-size-h5; font-family: 'BrandonGrotesque-Bold'; color: #BDC2C9;}
+h5, .h5 { font-size: @font-size-h5; font-family: 'BrandonGrotesque-Bold'; color: #adb2b9;}
 h6, .h6 { font-size: @font-size-h6; color: #fff; font-weight: 600;}
 
 
@@ -279,6 +279,10 @@ blockquote {
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  cite{
+    color: @gray-dark;
   }
 
   // Note: Deprecated small and .small as of v3.1.0

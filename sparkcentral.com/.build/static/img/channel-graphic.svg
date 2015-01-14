@@ -119,10 +119,10 @@
 	</g>
 </g>
 <g>
-	<rect x="624.3" y="275.2" fill="none" stroke="#EE4544" stroke-width="3" stroke-miterlimit="10" width="85.7" height="59.7"/>
-	<polyline fill="none" stroke="#EE4544" stroke-width="3" stroke-miterlimit="10" points="626,276.7 667.2,311.5 708.7,276.7 	"/>
-	<line fill="none" stroke="#EE4544" stroke-width="3" stroke-miterlimit="10" x1="624.3" y1="327" x2="658.1" y2="304.6"/>
-	<line fill="none" stroke="#EE4544" stroke-width="3" stroke-miterlimit="10" x1="710.1" y1="328.3" x2="676.3" y2="304.6"/>
+	<rect x="624.3" y="275.2" fill="none" stroke="#F15B29" stroke-width="3" stroke-miterlimit="10" width="85.7" height="59.7"/>
+	<polyline fill="none" stroke="#F15B29" stroke-width="3" stroke-miterlimit="10" points="626,276.7 667.2,311.5 708.7,276.7 	"/>
+	<line fill="none" stroke="#F15B29" stroke-width="3" stroke-miterlimit="10" x1="624.3" y1="327" x2="658.1" y2="304.6"/>
+	<line fill="none" stroke="#F15B29" stroke-width="3" stroke-miterlimit="10" x1="710.1" y1="328.3" x2="676.3" y2="304.6"/>
 </g>
 <g>
 	<path fill="none" stroke="#5BBF9B" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" d="M510.6,78
