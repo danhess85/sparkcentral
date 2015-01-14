@@ -6582,6 +6582,8 @@ header.product {
 .client-list {
   text-align: center;
   margin-bottom: 60px;
+  margin-right: 0;
+  margin-left: 0;
 }
 .client-list img {
   margin-bottom: 10px;
