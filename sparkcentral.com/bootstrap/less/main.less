@@ -212,6 +212,11 @@ footer {
 	&.border {
 		padding-bottom: 60px;
 	}
+	&.last{
+		border-bottom: @border;
+		margin-bottom: @margin;
+		padding-bottom: @padding;
+	}
 }
 
 .client-wide {
@@ -563,6 +568,10 @@ header.product{
 	}
 	p{
 		padding: 0 10px;
+	}
+
+	&:last-child{
+		margin-bottom: @margin;
 	}
 }
 
