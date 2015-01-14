@@ -6526,7 +6526,7 @@ header.product {
   margin-bottom: 100px;
 }
 .success-team li {
-  list-style-type: disc;
+  list-style-type: circle;
   margin-left: 19px;
 }
 .advisory-board {
@@ -6748,4 +6748,7 @@ header.career {
 }
 .demo-page .submit > input {
   background: #4690dc;
+}
+input.button {
+  display: none;
 }
