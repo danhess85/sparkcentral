@@ -65,6 +65,9 @@ header{
 nav {
 	li {
 		font-size: 14px;
+		&:last-child{
+			margin-left: 10px;
+		}
 	}
 }
 .logo{
@@ -83,9 +86,18 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 #demo-link {
 	button {
 		margin-top: 21px;
+		border: 2px solid @red;
+		&:hover{
+			background: @red;
+		a{
+			color: #fff;
+		}
+		}
 		a {
 			font-size: 14px;
+			color: @red;
 		}
+
 	}
 }
 
@@ -106,11 +118,16 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 
 .testimonial{
 	margin-bottom: @margin;
-	// background: url("../img/jerry.jpg") no-repeat scroll right center / 50% auto rgba(0, 0, 0, 0);
 	background-color: @gray-lighter;
-	// padding: 100px 0;
+	cite{
+		margin-bottom: @margin-s;
+		display: block;
+	}
 	.lead{
-		margin-top: @margin-m;
+		margin-top: @margin;
+		margin-bottom: 10px;
+		padding-right: @padding;
+
 	}
 	.testimonial-image {
 		padding-right: 0;
@@ -344,11 +361,12 @@ footer {
 	margin-bottom: @margin;
 	text-align: center;
 	h3, p{
-		text-align: left;
+		padding: 0 10px;
 	}
 	img{
 		text-align: center;
 		margin-bottom: 10px;
+		height: 120px;
 	}
 	h2{
 		margin-bottom: @margin-m;
@@ -359,6 +377,11 @@ footer {
 
 .news{
 	margin-bottom: @margin;
+	h2{
+		color: @gray;
+		margin-bottom: @margin-m;
+		margin-top: 0;
+	}
 	h3{
 		margin-top: 0;
 	}
@@ -367,7 +390,7 @@ footer {
 	}
 	cite{
 		display: block;
-		margin-bottom: 15px;
+		margin-bottom: @margin-s;
 	}
 	p{
 		margin-bottom: 0;
@@ -413,7 +436,7 @@ header.product{
 .tour{
 	h2{ 
 		color: @brand-primary;
-		font-size: 24px;
+		font-size: 34px;
 		margin-top: 0;
 	}
 	ul{
