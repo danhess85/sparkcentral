@@ -6415,6 +6415,23 @@ footer a {
 .mailbox-styled .btn-container a:hover {
   color: #51b9db;
 }
+.case-study-inner p {
+  margin-bottom: 30px;
+}
+.case-study-inner p:last-child {
+  margin-bottom: 100px;
+}
+.case-study-inner img {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.case-study-inner h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.case-study-inner em h3 {
+  font-size: 20px;
+}
 .news-notification {
   border-top: solid 1px #cdd2d9;
   border-bottom: solid 1px #cdd2d9;
