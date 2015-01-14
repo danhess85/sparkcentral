@@ -6223,14 +6223,14 @@ body.team #team-page > a {
   display: block;
 }
 .testimonial .lead {
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 10px;
   padding-right: 100px;
 }
 .testimonial .testimonial-image {
   padding-right: 0;
 }
-#jerry {
+.testimonial-img {
   width: 100%;
 }
 .jumbotron.home {
