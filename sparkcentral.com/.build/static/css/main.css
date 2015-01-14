@@ -6223,12 +6223,21 @@ body.team #team-page > a {
   display: block;
 }
 .testimonial .lead {
-  margin-top: 60px;
   margin-bottom: 10px;
   padding-right: 100px;
 }
 .testimonial .testimonial-image {
   padding-right: 0;
+}
+.testimonial .testimonial-logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 250px;
+  position: relative;
+  left: -75px;
+}
+.testimonial .testimonial-logo.delta {
+  left: -45px;
 }
 .testimonial-img {
   width: 100%;
@@ -6586,15 +6595,13 @@ header.product {
   width: 100%;
 }
 .investors {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
-.investors .logo-splitrock {
-  width: 75%;
-  padding-top: 45px;
-  margin-left: 55px;
-}
-.investors .logo-socialcapital {
-  margin-left: 55px;
+.investors img {
+  max-width: 200px;
+  max-height: 200px;
+  position: relative;
+  top: -25px;
 }
 .client-list {
   text-align: center;
@@ -6618,9 +6625,10 @@ header.career {
 .career-intro {
   background: #f3f4f6;
   padding: 60px 0;
+  margin-bottom: 100px;
 }
 #open-positions {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 #open-positions h2 {
   margin-bottom: 30px;
@@ -6632,9 +6640,8 @@ header.career {
   position: relative;
   background: url("../img/perks-background.jpg") no-repeat scroll center top / cover rgba(0, 0, 0, 0);
   background-size: cover;
-  height: 682px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .values h2 {
   color: $blue;
@@ -6653,7 +6660,7 @@ header.career {
   margin: 60px 0;
 }
 .perks {
-  padding: 60px 0 60px 0;
+  margin-bottom: 100px;
 }
 .perks h2 {
   margin-bottom: 30px;
