@@ -1088,6 +1088,7 @@ h2,
   color: #4690dc;
   font-weight: 300;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 h3,
 .h3 {
@@ -6434,6 +6435,7 @@ footer a {
 }
 .news h3 {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 .news h5 {
   margin-bottom: 0;
@@ -6485,7 +6487,7 @@ header.product {
   margin-bottom: 30px;
 }
 .tour ul li {
-  list-style-type: disc;
+  list-style-type: circle;
   margin-left: 19px;
 }
 .tour .row {
