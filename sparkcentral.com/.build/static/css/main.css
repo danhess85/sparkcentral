@@ -1087,6 +1087,7 @@ h2,
   font-size: 36px;
   color: #4690dc;
   font-weight: 300;
+  margin-bottom: 30px;
 }
 h3,
 .h3 {
@@ -6162,7 +6163,7 @@ header p {
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 nav li {
-  font-size: 14px;
+  font-size: 16px;
 }
 nav li:last-child {
   margin-left: 10px;
@@ -6499,6 +6500,9 @@ header.product {
 .tour .row img {
   max-height: 340px;
 }
+.canvas p {
+  margin-bottom: 30px;
+}
 .img {
   text-align: center;
 }
@@ -6540,6 +6544,13 @@ header.product {
 }
 .leadership {
   margin-bottom: 100px;
+}
+.leadership h3 {
+  margin-bottom: 0;
+}
+.leadership h4 {
+  font-size: 16px;
+  margin-top: 5px;
 }
 .leadership img {
   width: 100%;
