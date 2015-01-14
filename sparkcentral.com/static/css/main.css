@@ -1303,6 +1303,9 @@ blockquote ul:last-child,
 blockquote ol:last-child {
   margin-bottom: 0;
 }
+blockquote cite {
+  color: #4f5459;
+}
 blockquote footer,
 blockquote small,
 blockquote .small {
@@ -6430,7 +6433,7 @@ footer a {
 }
 .news h2 {
   color: #686f75;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   margin-top: 0;
 }
 .news h3 {
@@ -6474,6 +6477,9 @@ header.product {
 .gartner {
   margin-bottom: 100px;
   text-align: center;
+}
+.gartner cite {
+  color: #adb2b9;
 }
 .gartner img {
   margin-bottom: 30px;
@@ -6574,7 +6580,10 @@ header.product {
 }
 .client-list img {
   margin-bottom: 10px;
-  width: 80%;
+  width: 75%;
+}
+.client-list p {
+  padding: 0 10px;
 }
 header.career {
   margin-bottom: 0;

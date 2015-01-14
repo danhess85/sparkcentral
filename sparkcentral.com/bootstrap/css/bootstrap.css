@@ -1303,6 +1303,9 @@ blockquote ul:last-child,
 blockquote ol:last-child {
   margin-bottom: 0;
 }
+blockquote cite {
+  color: #4f5459;
+}
 blockquote footer,
 blockquote small,
 blockquote .small {
