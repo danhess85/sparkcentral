@@ -6550,6 +6550,8 @@ header.product {
 }
 .success-team {
   margin-bottom: 100px;
+  border-bottom: solid 1px #cdd2d9;
+  padding-bottom: 100px;
 }
 .success-team .styled {
   margin-bottom: 0;
@@ -6559,9 +6561,7 @@ header.product {
   margin-left: 19px;
 }
 .advisory-board {
-  border-bottom: solid 1px #cdd2d9;
   margin-bottom: 100px;
-  padding-bottom: 100px;
   text-align: center;
 }
 .advisory-board img {
