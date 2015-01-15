@@ -6501,6 +6501,7 @@ footer li {
   font-size: 30px;
   line-height: 1;
   margin-right: 5px;
+  transition: color 0.2s ease;
 }
 header.product {
   margin-bottom: 100px;
@@ -6791,6 +6792,13 @@ input.button {
 .logo-notes {
   margin-bottom: 100px;
   overflow: hidden;
+}
+.contact-info h4 {
+  font-size: 16px;
+}
+.download span,
+.download a {
+  font-size: 14px;
 }
 /* Large devices (large desktops, 1200px and up) */
 /* Medium devices (desktops, 992px and up) */
