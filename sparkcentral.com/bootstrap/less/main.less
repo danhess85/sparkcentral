@@ -194,9 +194,6 @@ footer {
 	}
 }
 
-.contact, .social {
-}
-
 //CLIENTS
 .clients{
 	background: @brand-primary;
@@ -446,14 +443,15 @@ footer{
 	padding: @padding-s 0; 
 	h5{ color: #fff; margin-bottom: 5px; }
 	a, li{ color: #8C99A3; }
-	.social li{
-		font-family: "socialico";
-		display: inline-block;
-		a{
-			font-size: 30px;
-			line-height: 1;
-			margin-right: 5px;
-		}
+}
+
+.social li{
+	font-family: "socialico";
+	display: inline-block;
+	a{
+		font-size: 30px;
+		line-height: 1;
+		margin-right: 5px;
 	}
 }
 
@@ -802,5 +800,16 @@ input.button{
 	display: none;
 }
 
+// Press
+
+.press-releases, .media-mentions, .contact-info, .logo-downloads {
+	margin-bottom: @margin-m;
+	overflow: hidden;
+}
+
+.logo-notes {
+	margin-bottom: @margin;
+	overflow: hidden;
+}
 
 @import "responsive.less";

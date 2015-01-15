@@ -6493,11 +6493,11 @@ footer a,
 footer li {
   color: #8C99A3;
 }
-footer .social li {
+.social li {
   font-family: "socialico";
   display: inline-block;
 }
-footer .social li a {
+.social li a {
   font-size: 30px;
   line-height: 1;
   margin-right: 5px;
@@ -6780,6 +6780,17 @@ header.career {
 }
 input.button {
   display: none;
+}
+.press-releases,
+.media-mentions,
+.contact-info,
+.logo-downloads {
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+.logo-notes {
+  margin-bottom: 100px;
+  overflow: hidden;
 }
 /* Large devices (large desktops, 1200px and up) */
 /* Medium devices (desktops, 992px and up) */
