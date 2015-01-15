@@ -74,7 +74,7 @@ nav {
 	}
 }
 .logo{
-	display: block;
+	display: inline-block;
 	margin-top: 15px;
 }
 
@@ -195,9 +195,6 @@ footer {
 	a {
 		transition: color 0.2s ease;
 	}
-}
-
-.contact, .social {
 }
 
 //CLIENTS
@@ -449,14 +446,16 @@ footer{
 	padding: @padding-s 0; 
 	h5{ color: #fff; margin-bottom: 5px; }
 	a, li{ color: #8C99A3; }
-	.social li{
-		font-family: "socialico";
-		display: inline-block;
-		a{
-			font-size: 30px;
-			line-height: 1;
-			margin-right: 5px;
-		}
+}
+
+.social li{
+	font-family: "socialico";
+	display: inline-block;
+	a{
+		font-size: 30px;
+		line-height: 1;
+		margin-right: 5px;
+		transition: color 0.2s ease;
 	}
 }
 
@@ -805,6 +804,7 @@ input.button{
 	display: none;
 }
 
+
 //WHITEPAPERS
 
 .whitepapers{
@@ -839,3 +839,28 @@ input.button{
 		}
 	}
 }
+// Press
+
+.press-releases, .media-mentions, .contact-info, .logo-downloads {
+	margin-bottom: @margin-m;
+	overflow: hidden;
+}
+
+.logo-notes {
+	margin-bottom: @margin;
+	overflow: hidden;
+}
+
+.contact-info {
+	h4 {
+		font-size: 16px;
+	}
+}
+
+.download {
+	span, a {
+		font-size: 14px;
+	}
+}
+
+@import "responsive.less";

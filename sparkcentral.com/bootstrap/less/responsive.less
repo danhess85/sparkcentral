@@ -1,0 +1,57 @@
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+}
+
+/* Tablet Down */
+@media (max-width: 767px) {
+	.testimonial, .past-news, footer {
+		display: none;
+	}
+
+	// General
+	.logo {
+		padding-left: 15px;
+	}
+	.nav.navbar-nav.right {
+		float: none;
+		li {
+			border-bottom: 1px solid #e0e0e0;  //ATTN
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+
+	// Home
+	.jumbotron.home {
+		height: auto;
+		h1 {
+			font-size: 28px;
+		}
+		p {
+			padding: 0 5%;
+		}
+		a {
+			margin-bottom: @margin-s;
+		}
+	}
+	.value-prop {
+		margin-bottom: @margin-s;
+	}
+}
+
+/* Small devices (phones, 640px and up) */
+@media (max-width: 640px) {
+
+}

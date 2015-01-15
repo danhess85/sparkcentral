@@ -6176,7 +6176,7 @@ nav li:last-child {
   margin-left: 10px;
 }
 .logo {
-  display: block;
+  display: inline-block;
   margin-top: 15px;
 }
 nav button {
@@ -6496,14 +6496,15 @@ footer a,
 footer li {
   color: #8C99A3;
 }
-footer .social li {
+.social li {
   font-family: "socialico";
   display: inline-block;
 }
-footer .social li a {
+.social li a {
   font-size: 30px;
   line-height: 1;
   margin-right: 5px;
+  transition: color 0.2s ease;
 }
 header.product {
   margin-bottom: 100px;
@@ -6819,3 +6820,60 @@ input.button {
   left: 15px;
   bottom: 15px;
 }
+.press-releases,
+.media-mentions,
+.contact-info,
+.logo-downloads {
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+.logo-notes {
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+.contact-info h4 {
+  font-size: 16px;
+}
+.download span,
+.download a {
+  font-size: 14px;
+}
+/* Large devices (large desktops, 1200px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Small devices (tablets, 768px and up) */
+/* Tablet Down */
+@media (max-width: 767px) {
+  .testimonial,
+  .past-news,
+  footer {
+    display: none;
+  }
+  .logo {
+    padding-left: 15px;
+  }
+  .nav.navbar-nav.right {
+    float: none;
+  }
+  .nav.navbar-nav.right li {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .nav.navbar-nav.right li:last-child {
+    border-bottom: none;
+  }
+  .jumbotron.home {
+    height: auto;
+  }
+  .jumbotron.home h1 {
+    font-size: 28px;
+  }
+  .jumbotron.home p {
+    padding: 0 5%;
+  }
+  .jumbotron.home a {
+    margin-bottom: 30px;
+  }
+  .value-prop {
+    margin-bottom: 30px;
+  }
+}
+/* Small devices (phones, 640px and up) */
