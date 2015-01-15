@@ -123,16 +123,18 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 		display: block;
 	}
 	.lead{
+		margin-top: @margin-s;
 		margin-bottom: 10px;
 		padding-right: @padding;
-
+	}
+	.testimonial-info {
+		margin-bottom: @margin-s;
 	}
 	.testimonial-image {
 		padding-right: 0;
 	}
 	.testimonial-logo {
-		margin-top: @margin-s;
-		margin-bottom: @margin-s;
+		// margin-top: @margin-s;
 		max-width: 250px;
 		position: relative;
 		left: -75px;
@@ -444,9 +446,12 @@ footer{
 	a, li{ color: #8C99A3; }
 }
 
-.social li{
-	font-family: "socialico";
-	display: inline-block;
+.social {
+	margin-bottom: 5px;
+	li {
+		font-family: "socialico";
+		display: inline-block;
+	}
 	a{
 		font-size: 30px;
 		line-height: 1;
@@ -843,20 +848,41 @@ input.button{
 .press-releases, .media-mentions, .contact-info, .logo-downloads {
 	margin-bottom: @margin-m;
 	overflow: hidden;
+	h3 {
+		margin-top: 0;
+	}
+}
+
+.press-releases, .media-mentions {
+	div {
+		margin-bottom: @margin-s;
+	}
 }
 
 .logo-notes {
 	margin-bottom: @margin;
 	overflow: hidden;
+	h3 {
+		margin-top: 0;
+	}
 }
 
 .contact-info {
 	h4 {
 		font-size: 16px;
+		margin-top: 7px;
+		margin-bottom: 11px;
 	}
 }
 
 .download {
+	display: inline-block;
+	width: 30%;
+	margin-right: 11px;
+	div {
+		border: 1px solid #e0e0e0;
+		padding: 15px;
+	}
 	span, a {
 		font-size: 14px;
 	}

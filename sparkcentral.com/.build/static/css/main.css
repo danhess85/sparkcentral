@@ -6223,15 +6223,17 @@ body.team #team-page > a {
   display: block;
 }
 .testimonial .lead {
+  margin-top: 30px;
   margin-bottom: 10px;
   padding-right: 100px;
+}
+.testimonial .testimonial-info {
+  margin-bottom: 30px;
 }
 .testimonial .testimonial-image {
   padding-right: 0;
 }
 .testimonial .testimonial-logo {
-  margin-top: 30px;
-  margin-bottom: 30px;
   max-width: 250px;
   position: relative;
   left: -75px;
@@ -6493,11 +6495,14 @@ footer a,
 footer li {
   color: #8C99A3;
 }
+.social {
+  margin-bottom: 5px;
+}
 .social li {
   font-family: "socialico";
   display: inline-block;
 }
-.social li a {
+.social a {
   font-size: 30px;
   line-height: 1;
   margin-right: 5px;
@@ -6827,12 +6832,36 @@ input.button {
   margin-bottom: 60px;
   overflow: hidden;
 }
+.press-releases h3,
+.media-mentions h3,
+.contact-info h3,
+.logo-downloads h3 {
+  margin-top: 0;
+}
+.press-releases div,
+.media-mentions div {
+  margin-bottom: 30px;
+}
 .logo-notes {
   margin-bottom: 100px;
   overflow: hidden;
 }
+.logo-notes h3 {
+  margin-top: 0;
+}
 .contact-info h4 {
   font-size: 16px;
+  margin-top: 7px;
+  margin-bottom: 11px;
+}
+.download {
+  display: inline-block;
+  width: 30%;
+  margin-right: 11px;
+}
+.download div {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
 }
 .download span,
 .download a {
@@ -6873,6 +6902,11 @@ input.button {
     margin-bottom: 30px;
   }
   .value-prop {
+    margin-bottom: 30px;
+  }
+  .download {
+    width: 100%;
+    margin-right: 0;
     margin-bottom: 30px;
   }
 }
