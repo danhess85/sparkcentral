@@ -6191,8 +6191,9 @@ body.team #team-page > a {
   color: #4690dc;
 }
 #demo-link button {
-  margin-top: 21px;
+  margin-top: 23px;
   border: 2px solid #f15b29;
+  padding: 2px 8px 4px 8px;
 }
 #demo-link button:hover {
   background: #f15b29;
