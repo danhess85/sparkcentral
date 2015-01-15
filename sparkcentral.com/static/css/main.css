@@ -6142,6 +6142,9 @@ ul.styled li {
 li {
   list-style: none;
 }
+a {
+  transition: color 0.2s ease;
+}
 a,
 a:hover {
   text-decoration: none;
