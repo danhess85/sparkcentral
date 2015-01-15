@@ -6228,7 +6228,7 @@ body.team #team-page > a {
   display: block;
 }
 .testimonial .lead {
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 10px;
   padding-right: 100px;
 }
@@ -6241,7 +6241,7 @@ body.team #team-page > a {
 .testimonial .testimonial-logo {
   max-width: 250px;
   position: relative;
-  left: -75px;
+  left: -79px;
 }
 .testimonial .testimonial-logo.delta {
   left: -45px;
@@ -6843,6 +6843,9 @@ input.button {
 .logo-downloads h3 {
   margin-top: 0;
 }
+.logo-downloads {
+  margin-bottom: 30px;
+}
 .press-releases div,
 .media-mentions div {
   margin-bottom: 30px;
@@ -6863,6 +6866,7 @@ input.button {
   display: inline-block;
   width: 30%;
   margin-right: 11px;
+  margin-bottom: 30px;
 }
 .download div {
   border: 1px solid #e0e0e0;
@@ -6875,6 +6879,12 @@ input.button {
 /* Large devices (large desktops, 1200px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Small devices (tablets, 768px and up) */
+/* Small Desktop Down */
+@media (max-width: 768px) {
+  .download {
+    width: 100%;
+  }
+}
 /* Tablet Down */
 @media (max-width: 767px) {
   .testimonial,
@@ -6889,7 +6899,7 @@ input.button {
     float: none;
   }
   .nav.navbar-nav.right li {
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #cdd2d9;
   }
   .nav.navbar-nav.right li:last-child {
     border-bottom: none;
@@ -6912,7 +6922,6 @@ input.button {
   .download {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 30px;
   }
 }
 /* Small devices (phones, 640px and up) */
