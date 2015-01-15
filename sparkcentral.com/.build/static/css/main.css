@@ -6173,7 +6173,7 @@ nav li:last-child {
   margin-left: 10px;
 }
 .logo {
-  display: block;
+  display: inline-block;
   margin-top: 15px;
 }
 nav button {
@@ -6781,3 +6781,42 @@ header.career {
 input.button {
   display: none;
 }
+/* Large devices (large desktops, 1200px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Small devices (tablets, 768px and up) */
+/* Tablet Down */
+@media (max-width: 767px) {
+  .testimonial,
+  .past-news,
+  footer {
+    display: none;
+  }
+  .logo {
+    padding-left: 15px;
+  }
+  .nav.navbar-nav.right {
+    float: none;
+  }
+  .nav.navbar-nav.right li {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .nav.navbar-nav.right li:last-child {
+    border-bottom: none;
+  }
+  .jumbotron.home {
+    height: auto;
+  }
+  .jumbotron.home h1 {
+    font-size: 28px;
+  }
+  .jumbotron.home p {
+    padding: 0 5%;
+  }
+  .jumbotron.home a {
+    margin-bottom: 30px;
+  }
+  .value-prop {
+    margin-bottom: 30px;
+  }
+}
+/* Small devices (phones, 640px and up) */
