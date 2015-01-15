@@ -6150,9 +6150,6 @@ a:focus,
 a:hover:focus {
   outline: none;
 }
-img {
-  width: 100%;
-}
 header {
   background-color: #4690dc;
   padding: 30px 0;
@@ -6787,6 +6784,9 @@ input.button {
 }
 .whitepapers {
   margin-bottom: 60px;
+}
+.whitepapers img {
+  width: 100%;
 }
 .whitepapers header h3 {
   color: #FFF;
