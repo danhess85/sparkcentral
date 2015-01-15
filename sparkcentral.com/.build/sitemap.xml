@@ -71,16 +71,6 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>terms.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>whitepapers.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
         <loc>why-us.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
