@@ -23,6 +23,9 @@
 			p {
 				display: none;
 			}
+			a {
+				margin-top: 30px;
+			}
 		}
 	}
 	.client-wide {
@@ -59,12 +62,23 @@
 
 /* Medium devices and down (desktops, 992px and down) */
 @media (max-width: @screen-md-min) {
+	// Clients
 	.client-wide {
+		margin-right: 0;
+		margin-left: 0;
 		&.lyft-styled {
 			background-color: transparent;
 			h2 {
 				background-image: url('../img/clients/lyft.svg');
 				background-size: 100% 100%;
+			}
+			.client-wide-image {
+				img {
+					right: 0;
+				}
+			}
+			.client-wide-info {
+				padding-left: 0;
 			}
 		}
 		&.mailbox-styled {
@@ -72,6 +86,14 @@
 			h2 {
 				background-image: url('../img/mailbox-logo-colored.png');
 				background-size: auto 100%;
+			}
+			.client-wide-image {
+				img {
+					left: 0;
+				}
+			}
+			.client-wide-info {
+				padding-right: 0;
 			}
 		}
 		.client-wide-info {
@@ -94,14 +116,34 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
-
+	.desktop-image {
+		display: inline-block;
+	}
+	.mobile-image {
+		display: none;
+	}
 }
 
 /* Tablet Down */
 @media (max-width: @screen-sm-min) {
+	.desktop-image {
+		display: none;
+	}
+	.mobile-image {
+		display: inline-block;
+		width: 100% !important;
+	}
+	// Nav
+	#demo-link {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
 	// Clients
+	.client {
+		margin: @margin-s 0;
+	}
 	.client-wide {
-		margin: @margin-m 0;
+		margin: @margin-s 0;
 		&.lyft-styled, &.mailbox-styled {
 			.client-wide-image {
 				img {
@@ -110,18 +152,28 @@
 				}
 			}
 		}
+		&.mailbox-styled {
+			margin-bottom: 0;
+			.client-wide-info {
+				h2 {
+					margin-top: @margin-s;
+				}
+			}
+		}
 	}
 	.case-study-tile {
 		margin-bottom: @margin-s;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.client-list {
+		margin-bottom: 0;
 	}
 	// Press
 	.download {
 		width: 100%;
 	}
-}
-
-/* Tablet Down */
-@media (max-width: 767px) {
 	.testimonial, .past-news, footer {
 		display: none;
 	}
@@ -138,6 +190,9 @@
 				border-bottom: none;
 			}
 		}
+	}
+	.btn-container {
+		margin-bottom: @margin-s;
 	}
 
 	// Home
