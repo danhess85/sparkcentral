@@ -9,10 +9,7 @@
 <body class="error-page">
 	{% endblock %}
 
-
 {% block content %}
-
-
 
 	<div class="col-sm-12">
 		<div class="row">
@@ -33,8 +30,8 @@
 <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 
 <script type="text/javascript" charset="utf-8">
-	$(document).ready(function() {
-		
+$(document).ready(function() {
+
 		// Add the missing url to the text
 		$("#url").text(window.location.pathname);
 		
@@ -47,5 +44,10 @@
 	})
 </script>
 
+<h1>Oh no, it looks like you're lost...</h1>
+<p>
+	The page <b id="url"></b> could not be found on this server. Let's <a href="/index.html/">start over</a> shall we? 
+</p>
+<img src="../static/img/404.jpg" alt="Error image">
 
 {% endblock %}

@@ -58,7 +58,7 @@ header{
 
 
 
-background: linear-gradient( to right, rgba(70,144,220,.8) 0%, rgba(70,144,220,.5) 20%,rgba(70,144,220,.1) 50%, rgba(70,144,220,.5) 80%, rgba(70,144,220,.8) 100%), url('../img/background-pattern.png');
+	background: linear-gradient( to right, rgba(70,144,220,.8) 0%, rgba(70,144,220,.5) 20%,rgba(70,144,220,.1) 50%, rgba(70,144,220,.5) 80%, rgba(70,144,220,.8) 100%), url('../img/background-pattern.png');
 	margin-bottom: @margin-m;
 	h1{
 		text-transform: uppercase;
@@ -77,9 +77,17 @@ background: linear-gradient( to right, rgba(70,144,220,.8) 0%, rgba(70,144,220,.
 nav {
 	li {
 		font-size: 16px;
-		&:last-child{
-			margin-left: 10px;
-		}
+	}
+	li > a.btn{
+		padding: 3px 5px;
+		margin-top: 23px;
+	}
+	.btn{
+		margin-top: 20px;
+		margin-left: 10px;
+	}
+	.btn-secondary{
+		color: @red;
 	}
 }
 .logo{
@@ -103,21 +111,12 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 }
 
 #demo-link {
-	button {
-		margin-top: 23px;
-		border: 2px solid @red;
-		padding: 2px 8px 4px 8px;
-		&:hover{
-			background: @red;
-			a{
-				color: #fff;
-			}
-		}
-		a {
-			font-size: 14px;
-			color: @red;
-		}
-
+	border: 2px solid @red;
+	padding: 2px 8px 4px 8px;
+	color: @red;
+	&:hover{
+		background: @red;
+		color: #fff;	
 	}
 }
 
@@ -764,12 +763,12 @@ header.career{
 //Demo Page
 .demo-page{
 	position: relative;
-	background: linear-gradient(
-		rgba(45, 50, 56, 0.8), 
-		rgba(45, 50, 56, 0.8)
-		),
-	url(../img/header-image.jpg) no-repeat center center fixed;
-	background-size: cover;
+	// background: linear-gradient(
+	// 	rgba(45, 50, 56, 0.8), 
+	// 	rgba(45, 50, 56, 0.8)
+	// 	),
+	// url(../img/header-image.jpg) no-repeat center center fixed;
+	// background-size: cover;
 	text-align: center;
 	width: 100%;
 	clear: both;
@@ -780,28 +779,46 @@ header.career{
 	nav{
 		display: none;
 	}
-
-	.jumbotron{
-
-		h1{
-			color: #FFF;
-			margin-top: 10%;
-		// font-family: "BrandonGrotesque-Bold",sans-serif;
+	h1{
+		color: @brand-primary;
+		margin-top: 10%;
 		text-transform: uppercase;
 		font-weight: 600;
 		font-size: 40px;
 	}
-	p{
-		color: #FFF;
-		padding: 0 15%;
+
+	.jumbotron{
+		p{
+			color: #FFF;
+			padding: 0 15%;
+		}
+		.btn{
+			margin-right: 20px;
+		}
 	}
-	.btn{
-		margin-right: 20px;
+	.submit > input{
+		background: @brand-primary;
 	}
-}
-.submit > input{
-	background: @brand-primary;
-}
+	header{
+		background-color: @brand-primary;
+		background-image: none;
+		margin-bottom: 0;
+		.logo{
+			display: inline-block;
+			margin-top: 0;
+			h1 {
+				background-image: url('../img/logo-white.svg');
+				background-repeat: no-repeat;
+				background-size: 200px;
+				display: inline-block;
+				text-indent: -9999em;
+				min-width: 200px;
+				height: 43px;
+				margin: -5px 0 0 0;
+			}
+		}
+	}
+
 }
 
 
