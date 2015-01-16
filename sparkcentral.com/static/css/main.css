@@ -6158,9 +6158,8 @@ a:hover:focus {
 header {
   background-color: #4690dc;
   padding: 30px 0;
-  background-image: url(../img/background-pattern.svg);
+  background: linear-gradient(to right, rgba(70, 144, 220, 0.8) 0%, rgba(70, 144, 220, 0.5) 20%, rgba(70, 144, 220, 0.1) 50%, rgba(70, 144, 220, 0.5) 80%, rgba(70, 144, 220, 0.8) 100%), url('../img/background-pattern.png');
   margin-bottom: 60px;
-  background-size: 350px;
 }
 header h1 {
   text-transform: uppercase;
