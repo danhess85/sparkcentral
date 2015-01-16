@@ -6216,6 +6216,13 @@ body.team #team-page > a {
   background: #f15b29;
   color: #fff;
 }
+#mc_embed_signup form {
+  padding: 0 !important;
+}
+#mc_embed_signup form input.email,
+#mc_embed_signup form input.button {
+  font-family: "Open Sans", sans-serif;
+}
 .demo {
   background: #4690dc;
   text-align: center;
@@ -6456,8 +6463,7 @@ footer a {
   margin-bottom: 100px;
   text-align: center;
 }
-.value-props h3,
-.value-props p {
+.value-props h3 {
   padding: 0 10px;
 }
 .value-props img {
@@ -6968,6 +6974,9 @@ input.button {
   .client-wide.lyft-styled .client-wide-image img {
     right: 0;
   }
+  .client-wide.lyft-styled .client-wide-info {
+    padding-left: 0;
+  }
   .client-wide.mailbox-styled {
     background-color: transparent;
   }
@@ -6977,6 +6986,9 @@ input.button {
   }
   .client-wide.mailbox-styled .client-wide-image img {
     left: 0;
+  }
+  .client-wide.mailbox-styled .client-wide-info {
+    padding-right: 0;
   }
   .client-wide .client-wide-info {
     padding-top: 0;
@@ -6993,25 +7005,56 @@ input.button {
   }
 }
 /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .desktop-image {
+    display: inline-block;
+  }
+  .mobile-image {
+    display: none;
+  }
+}
 /* Tablet Down */
 @media (max-width: 768px) {
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: inline-block;
+    width: 100% !important;
+  }
+  #demo-link {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .client {
+    margin: 30px 0;
+  }
   .client-wide {
-    margin: 60px 0;
+    margin: 30px 0;
   }
   .client-wide.lyft-styled .client-wide-image img,
   .client-wide.mailbox-styled .client-wide-image img {
     right: 0;
     left: 0;
   }
+  .client-wide.mailbox-styled {
+    margin-bottom: 0;
+  }
+  .client-wide.mailbox-styled .client-wide-info h2 {
+    margin-top: 30px;
+  }
   .case-study-tile {
     margin-bottom: 30px;
+  }
+  .case-study-tile:last-child {
+    margin-bottom: 0;
+  }
+  .client-list {
+    margin-bottom: 0;
   }
   .download {
     width: 100%;
   }
-}
-/* Tablet Down */
-@media (max-width: 767px) {
   .testimonial,
   .past-news,
   footer {
@@ -7028,6 +7071,9 @@ input.button {
   }
   .nav.navbar-nav.right li:last-child {
     border-bottom: none;
+  }
+  .btn-container {
+    margin-bottom: 30px;
   }
   .jumbotron.home {
     height: auto;

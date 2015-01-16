@@ -120,7 +120,18 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 	}
 }
 
-//Demo
+#mc_embed_signup {
+	form {
+		padding: 0 !important;
+		input {
+			&.email, &.button {
+				font-family: @font-family-sans-serif;
+			}
+		}
+	}
+}
+
+// Demo
 .demo{
 	background: @brand-primary;
 	text-align: center;
@@ -135,7 +146,7 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 	}
 }
 
-.testimonial{
+.testimonial {
 	margin-bottom: @margin;
 	background-color: @gray-lighter;
 	cite{
@@ -164,12 +175,12 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 	}
 }
 
-.testimonial-img{
+.testimonial-img {
 	width: 100%;
 }
 
 
-//homepage
+// Homepage
 .jumbotron.home{
 	height: 610px;
 	position: relative;
@@ -186,7 +197,6 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 	h1{
 		color: #FFF;
 		margin-top: 10%;
-		// font-family: "BrandonGrotesque-Bold",sans-serif;
 		text-transform: uppercase;
 		font-weight: 600;
 		font-size: 40px;
@@ -406,7 +416,7 @@ footer {
 .value-props{
 	margin-bottom: @margin;
 	text-align: center;
-	h3, p{
+	h3 {
 		padding: 0 10px;
 	}
 	img{
