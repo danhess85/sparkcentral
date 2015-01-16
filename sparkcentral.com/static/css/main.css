@@ -6589,6 +6589,22 @@ header.product {
 .advisory-board p {
   margin-bottom: 60px;
 }
+.client-list {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-right: 0;
+  margin-left: 0;
+}
+.client-list img {
+  margin-bottom: 10px;
+  width: 75%;
+}
+.client-list p {
+  padding: 0 10px;
+}
+.client-list:last-child {
+  margin-bottom: 100px;
+}
 .vision {
   margin-bottom: 100px;
   border-bottom: solid 1px #cdd2d9;
@@ -6618,22 +6634,6 @@ header.product {
   max-height: 200px;
   position: relative;
   top: -25px;
-}
-.client-list {
-  text-align: center;
-  margin-bottom: 60px;
-  margin-right: 0;
-  margin-left: 0;
-}
-.client-list img {
-  margin-bottom: 10px;
-  width: 75%;
-}
-.client-list p {
-  padding: 0 10px;
-}
-.client-list:last-child {
-  margin-bottom: 100px;
 }
 header.career {
   margin-bottom: 0;
