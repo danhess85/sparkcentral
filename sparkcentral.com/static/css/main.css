@@ -6871,6 +6871,22 @@ input.button {
 .download a {
   font-size: 14px;
 }
+.error-page .content {
+  overflow: hidden;
+  margin: 60px 0 100px 0;
+  text-align: center;
+}
+.error-page h3 {
+  margin: 0 auto 60px auto;
+  font-size: 24px;
+  width: 75%;
+}
+.error-page img {
+  width: 75%;
+}
+.error-text {
+  color: #8C99A3;
+}
 /* Large devices (large desktops, 1200px and up) */
 /* Large devices down (1200px and below) */
 @media (max-width: 1200px) {

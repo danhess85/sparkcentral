@@ -1,5 +1,33 @@
 {% extends "base.html" %}
+
+{% block header %}
+<title>Sparkcentral | 404 Page Not Found</title>
+{% endblock %}
+
+
+{% block body %}
+<body class="error-page">
+	{% endblock %}
+
+
 {% block content %}
+
+
+
+	<div class="col-sm-12">
+		<div class="row">
+			<div class="container">
+				<h3 class="text-center error-text">
+					Oh no, we can't seem to find <b id="url"></b> on this server. Let's start from the <a href="/index.html">beginning</a> shall we?
+				</h3>
+				<img src="../static/img/404.jpg" alt="404 Error Image - Lighthouse Illustration">
+			</div><!--container-->
+		</div><!--row-->
+	</div><!--col-->
+
+
+
+
 <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 
 <script type="text/javascript" charset="utf-8">
@@ -17,7 +45,5 @@
 	})
 </script>
 
-<p>
-	Sorry the page <b id="url"></b> could not be found on this server.
-</p>
+
 {% endblock %}
