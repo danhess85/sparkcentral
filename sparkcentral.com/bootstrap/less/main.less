@@ -786,6 +786,9 @@ header.career{
 		font-weight: 600;
 		font-size: 40px;
 	}
+	.lead{
+		font-size: 20px;
+	}
 
 	.jumbotron{
 		p{
@@ -802,10 +805,11 @@ header.career{
 	header{
 		background-color: @brand-primary;
 		background-image: none;
-		margin-bottom: 0;
+		margin-bottom: @margin-m;
 		.logo{
 			display: inline-block;
 			margin-top: 0;
+			float: left;
 			h1 {
 				background-image: url('../img/logo-white.svg');
 				background-repeat: no-repeat;
@@ -944,6 +948,17 @@ input.button{
 	color: #8C99A3;
 }
 
+// Success
+
+.success-page{
+	text-align: center;
+	footer{
+		display: none;
+	}
+	nav{
+		margin-bottom: @margin-m;
+	}
+}
 
 
 @import "responsive.less";
