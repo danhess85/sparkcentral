@@ -6801,6 +6801,9 @@ header.career {
   height: 43px;
   margin: -5px 0 0 0;
 }
+.demo-page .demo-form {
+  background: #fff;
+}
 input.button {
   display: none;
 }
