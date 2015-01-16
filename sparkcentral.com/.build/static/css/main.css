@@ -6918,6 +6918,9 @@ input.button {
   .case-study-tile .hover-info p {
     display: none;
   }
+  .case-study-tile .hover-info a {
+    margin-top: 30px;
+  }
   .client-wide.lyft-styled h2,
   .client-wide.mailbox-styled h2 {
     margin-top: 15px;
@@ -6938,6 +6941,10 @@ input.button {
 }
 /* Medium devices and down (desktops, 992px and down) */
 @media (max-width: 992px) {
+  .client-wide {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .client-wide.lyft-styled {
     background-color: transparent;
   }
@@ -6945,12 +6952,18 @@ input.button {
     background-image: url('../img/clients/lyft.svg');
     background-size: 100% 100%;
   }
+  .client-wide.lyft-styled .client-wide-image img {
+    right: 0;
+  }
   .client-wide.mailbox-styled {
     background-color: transparent;
   }
   .client-wide.mailbox-styled h2 {
     background-image: url('../img/mailbox-logo-colored.png');
     background-size: auto 100%;
+  }
+  .client-wide.mailbox-styled .client-wide-image img {
+    left: 0;
   }
   .client-wide .client-wide-info {
     padding-top: 0;

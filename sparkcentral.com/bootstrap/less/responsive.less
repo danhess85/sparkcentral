@@ -23,6 +23,9 @@
 			p {
 				display: none;
 			}
+			a {
+				margin-top: 30px;
+			}
 		}
 	}
 	.client-wide {
@@ -59,12 +62,20 @@
 
 /* Medium devices and down (desktops, 992px and down) */
 @media (max-width: @screen-md-min) {
+	// Clients
 	.client-wide {
+		margin-right: 0;
+		margin-left: 0;
 		&.lyft-styled {
 			background-color: transparent;
 			h2 {
 				background-image: url('../img/clients/lyft.svg');
 				background-size: 100% 100%;
+			}
+			.client-wide-image {
+				img {
+					right: 0;
+				}
 			}
 		}
 		&.mailbox-styled {
@@ -72,6 +83,11 @@
 			h2 {
 				background-image: url('../img/mailbox-logo-colored.png');
 				background-size: auto 100%;
+			}
+			.client-wide-image {
+				img {
+					left: 0;
+				}
 			}
 		}
 		.client-wide-info {
