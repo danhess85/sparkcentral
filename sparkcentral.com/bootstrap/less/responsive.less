@@ -3,18 +3,82 @@
 
 }
 
+/* Large devices down (1200px and below) */
+@media (max-width: @screen-lg-min) {
+	// Clients
+	.client-wide, .client-wide {
+		&.lyft-styled {
+			background-color: transparent;
+			h2 {
+				background-image: url('../img/clients/lyft.svg');
+				background-size: 100% 100%;
+			}
+		}
+		&.mailbox-styled {
+			background-color: transparent;
+			h2 {
+				background-image: url('../img/mailbox-logo-colored.png');
+				background-size: auto 100%;
+			}
+		}
+		.client-wide-info {
+			padding-top: 0;
+			a, p {
+				color: #686f75;
+			}
+		}
+	}
+	.case-study-tile {
+		.hover-info {
+			p {
+				display: none;
+			}
+		}
+	}
+}
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-
+	// Clients
+	.case-study-tile {
+		&:hover {
+			.overlay {
+				img {
+					opacity: 0;
+				}
+			}
+			.hover-info {
+				top: 30px;
+				opacity: 1;
+			}
+		}
+	}
 }
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
 
 }
 
-/* Small Desktop Down */
+/* Tablet Down */
 @media (max-width: @screen-sm-min) {
+	// Clients
+	.client-wide {
+		margin: @margin-m 0;
+		&.lyft-styled, &.mailbox-styled {
+			.client-wide-image {
+				img {
+					right: 0;
+					left: 0;
+				}
+			}
+		}
+	}
+	.case-study-tile {
+		margin-bottom: @margin-s;
+	}
+	// Press
 	.download {
 		width: 100%;
 	}

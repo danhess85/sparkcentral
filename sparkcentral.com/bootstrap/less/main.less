@@ -85,6 +85,13 @@ nav {
 .logo{
 	display: inline-block;
 	margin-top: 15px;
+	h1 {
+		background-image: url('../img/logo.svg');
+		display: inline-block;
+		text-indent: -9999em;
+		min-width: 185px;
+		margin: 0;
+	}
 }
 
 nav button{
@@ -284,8 +291,6 @@ footer {
 
 .case-study-tile {
 	position: relative;
-	// overflow: hidden;
-	// min-height: 235px;
 	img {
 		margin-bottom: 0;
 	}
@@ -318,17 +323,6 @@ footer {
 				width: 100%;
 				padding: 0 15px;
 			}
-		}
-	}
-	&:hover {
-		.overlay {
-			img {
-				opacity: 0;
-			}
-		}
-		.hover-info {
-			top: 30px;
-			opacity: 1;
 		}
 	}
 }
@@ -400,8 +394,8 @@ footer {
 
 
 .news-notification{
-	border-top: @border;
-	border-bottom: @border;
+	border-top: 1px solid #f3f4f6;
+	border-bottom: 1px solid #f3f4f6;
 	margin-bottom: @margin-m;
 	p{
 		text-align: center;
@@ -876,6 +870,9 @@ input.button{
 .press-releases, .media-mentions {
 	div {
 		margin-bottom: @margin-s;
+		h5 {
+			margin: 0;
+		}
 	}
 }
 
