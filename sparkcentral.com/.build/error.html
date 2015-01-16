@@ -6,19 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Sparkcentral enables enterprises to handle high volumes of customer service interactions over social media.">
 
-	<link rel="shortcut icon" href="./static/favicon.ico"> 
-	<link rel="stylesheet" href="./static/css/main.css">
-	<!-- Latest compiled and minified JavaScript -->
-	
-	<title>Sparkcentral</title>
-	
+  <link rel="shortcut icon" href="./static/favicon.ico"> 
+  <link rel="stylesheet" href="./static/css/main.css">
+  <!-- Latest compiled and minified JavaScript -->
+  
+  <title>Sparkcentral</title>
+  
 
 
 </head>
 
 
 <body>
-
+  
 
   <nav class="navbar navbar-default">
     <div class="container">
@@ -39,7 +39,7 @@
      <li id="company-page"><a href="/company.html">Company</a></li>
      <li id="clients-page"><a href="/clients.html">Clients</a></li>
      <li id="team-page"><a href="/team.html">Team</a></li>
-     <li id="demo-link"><button class="btn btn-secondary" ><a href="/demo.html">Try it Free</a></button></li>
+     <li><a id="demo-link" class="btn btn-secondary" href="/demo.html">Try it Free</a></li>
    </ul>
  </div><!--/.nav-collapse -->
 </div>
@@ -52,8 +52,8 @@
 <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 
 <script type="text/javascript" charset="utf-8">
-	$(document).ready(function() {
-		
+$(document).ready(function() {
+
 		// Add the missing url to the text
 		$("#url").text(window.location.pathname);
 		
@@ -66,9 +66,13 @@
 	})
 </script>
 
+<h1>Oh no, it looks like you're lost...</h1>
 <p>
-	Sorry the page <b id="url"></b> could not be found on this server.
+	The page <b id="url"></b> could not be found on this server. Let's <a href="/index.html/">start over</a> shall we? 
 </p>
+<img src="../static/img/404.jpg" alt="Error image">
+
+
 
 
 </div><!--content-->
@@ -117,42 +121,63 @@
       <div class="col-md-4">
         <h6>Sign up for our mailing list</h6>
 
+
+
         <!-- Begin MailChimp Signup Form -->
         <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-
         <style type="text/css">
-        #mc_embed_signup{background: none; clear:left; padding: 0;}
+        #mc_embed_signup{background:none; clear:left; font:14px Helvetica,Arial,sans-serif; }
   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
   </style>
-
   <div id="mc_embed_signup">
-    <form  action="//sparkcentral.us2.list-manage.com/subscribe/post?u=f3fb7b3cbf571b6f9a8596678&amp;id=142cb4a418" 
-    style="padding:0;"
-    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    
-    <div id="mc_embed_signup_scroll">
+
+    <form action="//sparkcentral.us2.list-manage.com/subscribe/post?u=f3fb7b3cbf571b6f9a8596678&amp;id=403b19e006" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL">Subscribe to our mailing list</label>
 
 
-      <input type="email" 
-      style="display:inline; margin:0; height: 40px; border-radius: 2px; border-radius:0; border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px; border: none; outline: none;" 
-      value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
+        <input type="email" 
 
-      <input id="mailchimp-btn" 
-      style="display:inline; marign:0; background: #4690dc; width: 0; position:relative; left:-5px; height: 40px; border-top-left-radius: 0; border-bottom-left-radius: 0; min-width: 70px;"
-      type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="button">
+        style="display:inline; margin:0; height: 40px; border-radius: 2px; border-radius:0; border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px; border: none; outline: none; padding-left: 3px;" 
+
+        value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
 
 
-      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;"><input type="text" name="b_f3fb7b3cbf571b6f9a8596678_142cb4a418" tabindex="-1" value=""></div>
+        <input type="submit" 
+        style="display:inline; marign:0; background: #4690dc; width: 0; position:relative; left:-5px; height: 40px; border-top-left-radius: 0; border-bottom-left-radius: 0; min-width: 70px;"
 
-    </div>
-  </form>
-</div>
+        value="Send" name="subscribe" id="mc-embedded-subscribe" class="button">
 
-<!--End mc_embed_signup-->
+
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_f3fb7b3cbf571b6f9a8596678_403b19e006" tabindex="-1" value=""></div>
+      </div>
+
+    </form>
+  </div>
+
+  <!--End mc_embed_signup-->
+
+
 </div><!--col-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </div><!--row-->
@@ -184,6 +209,21 @@ piCId = '1052';
 })();
 </script>
 <!--End Pardot Tracking Code-->
+
+
+<!--Start Google Analytics Tracking Code-->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-22284738-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!--End Google Analytics Tracking Code-->
+
 
 
 </body>

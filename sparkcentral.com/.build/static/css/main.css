@@ -6174,8 +6174,16 @@ header p {
 nav li {
   font-size: 16px;
 }
-nav li:last-child {
+nav li > a.btn {
+  padding: 3px 5px;
+  margin-top: 23px;
+}
+nav .btn {
+  margin-top: 20px;
   margin-left: 10px;
+}
+nav .btn-secondary {
+  color: #f15b29;
 }
 .logo {
   display: inline-block;
@@ -6199,20 +6207,14 @@ body.clients-page #clients-page > a,
 body.team #team-page > a {
   color: #4690dc;
 }
-#demo-link button {
-  margin-top: 23px;
+#demo-link {
   border: 2px solid #f15b29;
   padding: 2px 8px 4px 8px;
-}
-#demo-link button:hover {
-  background: #f15b29;
-}
-#demo-link button:hover a {
-  color: #fff;
-}
-#demo-link button a {
-  font-size: 14px;
   color: #f15b29;
+}
+#demo-link:hover {
+  background: #f15b29;
+  color: #fff;
 }
 .demo {
   background: #4690dc;
@@ -6753,8 +6755,6 @@ header.career {
 }
 .demo-page {
   position: relative;
-  background: linear-gradient(rgba(45, 50, 56, 0.8), rgba(45, 50, 56, 0.8)), url(../img/header-image.jpg) no-repeat center center fixed;
-  background-size: cover;
   text-align: center;
   width: 100%;
   clear: both;
@@ -6766,8 +6766,8 @@ header.career {
 .demo-page nav {
   display: none;
 }
-.demo-page .jumbotron h1 {
-  color: #FFF;
+.demo-page h1 {
+  color: #4690dc;
   margin-top: 10%;
   text-transform: uppercase;
   font-weight: 600;
@@ -6782,6 +6782,25 @@ header.career {
 }
 .demo-page .submit > input {
   background: #4690dc;
+}
+.demo-page header {
+  background-color: #4690dc;
+  background-image: none;
+  margin-bottom: 0;
+}
+.demo-page header .logo {
+  display: inline-block;
+  margin-top: 0;
+}
+.demo-page header .logo h1 {
+  background-image: url('../img/logo-white.svg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  text-indent: -9999em;
+  min-width: 200px;
+  height: 43px;
+  margin: -5px 0 0 0;
 }
 input.button {
   display: none;
