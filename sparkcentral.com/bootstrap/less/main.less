@@ -763,16 +763,19 @@ header.career{
 //Demo Page
 .demo-page{
 	position: relative;
-	// background: linear-gradient(
-	// 	rgba(45, 50, 56, 0.8), 
-	// 	rgba(45, 50, 56, 0.8)
-	// 	),
-	// url(../img/header-image.jpg) no-repeat center center fixed;
-	// background-size: cover;
+	background: linear-gradient(
+		rgba(45, 50, 56, 0.8), 
+		rgba(45, 50, 56, 0.8)
+		),
+	url(../img/header-image.jpg) no-repeat center center fixed;
+	background-size: cover;
 	text-align: center;
 	width: 100%;
 	clear: both;
 	background-blend-mode: multiply;
+	h2{
+		margin-bottom: 10px;
+	}
 	footer{
 		display: none;
 	}
@@ -803,15 +806,17 @@ header.career{
 		background: @brand-primary;
 	}
 	header{
-		background-color: @brand-primary;
+		background-color: #fff;
 		background-image: none;
 		margin-bottom: @margin-m;
+		p{
+			color: @gray;
+		}
 		.logo{
 			display: inline-block;
 			margin-top: 0;
 			float: left;
 			h1 {
-				background-image: url('../img/logo-white.svg');
 				background-repeat: no-repeat;
 				background-size: 200px;
 				display: inline-block;
@@ -822,14 +827,13 @@ header.career{
 			}
 		}
 	}
-
 }
 
-
-input.button{
-	display: none;
+.demo-form{
+	background: #fff;
+	border-radius: 4px;
+	padding: 40px 40px 0;
 }
-
 
 //WHITEPAPERS
 
@@ -960,5 +964,6 @@ input.button{
 	}
 }
 
+#pardot-form .customclass {color: red;}
 
 @import "responsive.less";
