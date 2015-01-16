@@ -6122,9 +6122,9 @@ button.close {
   }
 }
 * {
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 .right {
   float: right;
@@ -6151,8 +6151,7 @@ a,
 a:hover {
   text-decoration: none;
 }
-a:focus,
-a:hover:focus {
+a:focus {
   outline: none;
 }
 header {
@@ -6185,6 +6184,9 @@ nav .btn {
 nav .btn-secondary {
   color: #f15b29;
 }
+nav button {
+  margin-top: 20px;
+}
 .logo {
   display: inline-block;
   margin-top: 15px;
@@ -6195,9 +6197,6 @@ nav .btn-secondary {
   text-indent: -9999em;
   min-width: 185px;
   margin: 0;
-}
-nav button {
-  margin-top: 20px;
 }
 body.product #product-page > a,
 body.solutions #solutions-page > a,

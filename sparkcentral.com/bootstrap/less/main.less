@@ -1,11 +1,11 @@
 @import "bootstrap.less";
 
 
-//global
+// Global
 * {
+	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 .right{
@@ -39,6 +39,9 @@ a {
 
 a, a:hover {
 	text-decoration: none;
+}
+
+a {
 	&:focus {
 		outline: none;
 	}
@@ -48,22 +51,14 @@ a, a:hover {
 	text-shadow: @string;
 }
 
-
 header{ 
 	background-color: @brand-primary;
 	padding: @padding-s 0;
-	// background-image: url(../img/background-pattern.svg);
-
-
-
-
-
 	background: linear-gradient( to right, rgba(70,144,220,.8) 0%, rgba(70,144,220,.5) 20%,rgba(70,144,220,.1) 50%, rgba(70,144,220,.5) 80%, rgba(70,144,220,.8) 100%), url('../img/background-pattern.png');
 	margin-bottom: @margin-m;
 	h1{
 		text-transform: uppercase;
 		.text-shadow;
-
 	}
 	p{
 		color: #fff;
@@ -73,7 +68,7 @@ header{
 	}
 }
 
-//nav bar
+// Nav
 nav {
 	li {
 		font-size: 16px;
@@ -89,8 +84,12 @@ nav {
 	.btn-secondary{
 		color: @red;
 	}
+	button {
+		margin-top: 20px;
+	}
 }
-.logo{
+
+.logo {
 	display: inline-block;
 	margin-top: 15px;
 	h1 {
@@ -102,11 +101,12 @@ nav {
 	}
 }
 
-nav button{
-	margin-top: 20px;
-}
-
-body.product #product-page > a , body.solutions #solutions-page > a, body.why-us #why-us-page > a, body.company #company-page > a, body.clients-page #clients-page > a, body.team #team-page > a{
+body.product #product-page > a, 
+body.solutions #solutions-page > a, 
+body.why-us #why-us-page > a, 
+body.company #company-page > a, 
+body.clients-page #clients-page > a, 
+body.team #team-page > a {
 	color: @brand-primary;
 }
 
@@ -132,7 +132,7 @@ body.product #product-page > a , body.solutions #solutions-page > a, body.why-us
 }
 
 // Demo
-.demo{
+.demo {
 	background: @brand-primary;
 	text-align: center;
 	padding: @padding-m 0;
@@ -225,8 +225,8 @@ footer {
 	}
 }
 
-//CLIENTS
-.clients{
+// Clients
+.clients {
 	background: @brand-primary;
 	padding: 10px 0;
 	li{
@@ -238,7 +238,7 @@ footer {
 	}
 }
 
-.client{
+.client {
 	margin: @margin-m 0;
 	img{
 		width: 100%;
