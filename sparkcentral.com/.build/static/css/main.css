@@ -6774,6 +6774,9 @@ header.career {
   font-weight: 600;
   font-size: 40px;
 }
+.demo-page .lead {
+  font-size: 20px;
+}
 .demo-page .jumbotron p {
   color: #FFF;
   padding: 0 15%;
@@ -6787,11 +6790,12 @@ header.career {
 .demo-page header {
   background-color: #4690dc;
   background-image: none;
-  margin-bottom: 0;
+  margin-bottom: 60px;
 }
 .demo-page header .logo {
   display: inline-block;
   margin-top: 0;
+  float: left;
 }
 .demo-page header .logo h1 {
   background-image: url('../img/logo-white.svg');
@@ -6905,6 +6909,15 @@ input.button {
 }
 .error-text {
   color: #8C99A3;
+}
+.success-page {
+  text-align: center;
+}
+.success-page footer {
+  display: none;
+}
+.success-page nav {
+  margin-bottom: 60px;
 }
 /* Large devices (large desktops, 1200px and up) */
 /* Large devices down (1200px and below) */
