@@ -6,25 +6,15 @@
 /* Large devices down (1200px and below) */
 @media (max-width: @screen-lg-min) {
 	// Clients
-	.client-wide, .client-wide {
-		&.lyft-styled {
-			background-color: transparent;
-			h2 {
-				background-image: url('../img/clients/lyft.svg');
-				background-size: 100% 100%;
-			}
-		}
+	.client-wide {
 		&.mailbox-styled {
-			background-color: transparent;
-			h2 {
-				background-image: url('../img/mailbox-logo-colored.png');
-				background-size: auto 100%;
+			.client-wide-info {
+				padding: 0 15px 0 0;
 			}
 		}
-		.client-wide-info {
-			padding-top: 0;
-			a, p {
-				color: #686f75;
+		&.lyft-styled {
+			.client-wide-info {
+				padding: 0 0 0 15px;
 			}
 		}
 	}
@@ -33,6 +23,18 @@
 			p {
 				display: none;
 			}
+		}
+	}
+	.client-wide {
+		&.lyft-styled, &.mailbox-styled {
+			h2 {
+				margin-top: 15px;
+			}
+		}
+	}
+	.client-wide-info {
+		p {
+			font-size: 15px;
 		}
 	}
 }
@@ -50,6 +52,40 @@
 			.hover-info {
 				top: 30px;
 				opacity: 1;
+			}
+		}
+	}
+}
+
+/* Medium devices and down (desktops, 992px and down) */
+@media (max-width: @screen-md-min) {
+	.client-wide {
+		&.lyft-styled {
+			background-color: transparent;
+			h2 {
+				background-image: url('../img/clients/lyft.svg');
+				background-size: 100% 100%;
+			}
+		}
+		&.mailbox-styled {
+			background-color: transparent;
+			h2 {
+				background-image: url('../img/mailbox-logo-colored.png');
+				background-size: auto 100%;
+			}
+		}
+		.client-wide-info {
+			padding-top: 0;
+			p {
+				font-size: 16px;
+			}
+			a, p {
+				color: #686f75;
+			}
+			.btn-container {
+				a {
+					border: 1px solid #cdd2d9;
+				}
 			}
 		}
 	}
