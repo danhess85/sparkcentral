@@ -95,6 +95,19 @@ footer {
 	}
 }
 
+// Demo Footer Form
+
+.demo{
+	background: @brand-primary;
+	text-align: center;
+	padding: @padding-m 0;
+	h2{
+		color: #fff;
+		margin-top: 0;
+	}
+}
+
+
 // Nav
 
 nav {
@@ -752,6 +765,9 @@ header.career {
 	width: 100%;
 	clear: both;
 	background-blend-mode: multiply;
+	header{
+		padding: 20px 0;
+	}
 	footer {
 		display: none;
 	}
@@ -768,23 +784,14 @@ header.career {
 	.lead {
 		font-size: 20px;
 	}
-
-	.jumbotron {
-		p {
-			color: #FFF;
-			padding: 0 15%;
-		}
-		.btn {
-			margin-right: 20px;
-		}
-	}
-	.submit > input {
-		background: @brand-primary;
-	}
 	header {
 		background-color: @brand-primary;
 		background-image: none;
 		margin-bottom: @margin-m;
+		p{
+			font-size: 14px;
+			margin-top: 10px;
+		}
 		.logo {
 			display: inline-block;
 			margin-top: 0;
@@ -797,7 +804,7 @@ header.career {
 				text-indent: -9999em;
 				min-width: 200px;
 				height: 43px;
-				margin: -5px 0 0 0;
+				margin: -3px 0 0 0;
 			}
 		}
 	}
