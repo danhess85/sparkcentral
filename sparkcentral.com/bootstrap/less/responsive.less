@@ -7,8 +7,11 @@
 @media (max-width: @screen-lg-min) {
 	.testimonial {
 		.lead {
-			margin-top: 35px;
+			margin-top: 15px;
 			font-size: 16px;
+		}
+		.testimonial-logo {
+			margin-top: 35px;
 		}
 	}
 	// Clients
@@ -149,6 +152,10 @@
 		margin-right: 15px;
 		margin-left: 15px;
 	}
+	// Why Us
+	.success-copy {
+		margin-bottom: @margin-m;
+	}
 	// Clients
 	.client {
 		margin: @margin-s 0;
@@ -194,7 +201,7 @@
 		padding-left: 15px;
 	}
 	.nav.navbar-nav.right {
-		float: none;
+		float: left;
 		li {
 			border-bottom: 1px solid #cdd2d9;  //ATTN
 			&:last-child {
@@ -230,7 +237,20 @@
 	}
 }
 
-/* Small devices (phones, 640px and up) */
+/* Small devices down (phones, 640px and down) */
 @media (max-width: 640px) {
-
+	.nav.navbar-nav.right {
+		float: none;
+	}
+	.clients-group-one {
+		&:last-child {
+			margin-bottom: @margin-m !important;
+		}
+		&.mobile-margin {
+			margin-bottom: @margin-m;
+		}
+	}
+	.clients-group-two {
+		display: none;
+	}
 }
