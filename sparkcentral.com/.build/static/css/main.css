@@ -6763,6 +6763,9 @@ header.career {
   clear: both;
   background-blend-mode: multiply;
 }
+.demo-page header {
+  padding: 20px 0;
+}
 .demo-page footer {
   display: none;
 }
@@ -6779,20 +6782,14 @@ header.career {
 .demo-page .lead {
   font-size: 20px;
 }
-.demo-page .jumbotron p {
-  color: #FFF;
-  padding: 0 15%;
-}
-.demo-page .jumbotron .btn {
-  margin-right: 20px;
-}
-.demo-page .submit > input {
-  background: #4690dc;
-}
 .demo-page header {
   background-color: #4690dc;
   background-image: none;
   margin-bottom: 60px;
+}
+.demo-page header p {
+  font-size: 14px;
+  margin-top: 10px;
 }
 .demo-page header .logo {
   display: inline-block;
@@ -6807,7 +6804,7 @@ header.career {
   text-indent: -9999em;
   min-width: 200px;
   height: 43px;
-  margin: -5px 0 0 0;
+  margin: -3px 0 0 0;
 }
 input.button {
   display: none;
