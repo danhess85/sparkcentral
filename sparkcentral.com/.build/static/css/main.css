@@ -6195,6 +6195,15 @@ footer a {
 #mc_embed_signup form input.button {
   font-family: "Open Sans", sans-serif;
 }
+.demo {
+  background: #4690dc;
+  text-align: center;
+  padding: 60px 0;
+}
+.demo h2 {
+  color: #fff;
+  margin-top: 0;
+}
 nav li {
   font-size: 16px;
 }
