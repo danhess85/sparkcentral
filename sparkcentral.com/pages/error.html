@@ -9,7 +9,7 @@
 <body class="error-page">
 	{% endblock %}
 
-{% block content %}
+	{% block content %}
 
 	<div class="col-sm-12">
 		<div class="row">
@@ -18,7 +18,7 @@
 				<h3 class="text-center error-text">
 					We can't seem to find <!-- <b id="url"></b> -->this page on this server. Let's start from the <a href="{% static 'index.html' %}">beginning</a> shall we?
 				</h3>
-				<img src="../static/img/404.jpg" alt="404 Error Image - Lighthouse Illustration">
+				<img src="{% static 'static/img/404.jpg' %}" alt="404 Error Image"/>
 			</div><!--container-->
 		</div><!--row-->
 	</div><!--col-->
@@ -26,7 +26,7 @@
 	<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 
 	<script type="text/javascript" charset="utf-8">
-		$(document).ready(function() {
+	$(document).ready(function() {
 
 			// Add the missing url to the text
 			$("#url").text(window.location.pathname);
@@ -40,4 +40,4 @@
 		})
 	</script>
 
-{% endblock %}
+	{% endblock %}
