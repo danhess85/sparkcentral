@@ -13,8 +13,6 @@
   
 	<title>Sparkcentral</title>
 	
-
-
 </head>
 
 
@@ -30,7 +28,7 @@
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
      </button>
-     <a class="logo" href="index.html"><!-- <img src="../static/img/logo.svg"/> --><h1>Sparkcentral</h1></a>
+     <a class="logo" href="index.html"><h1>Sparkcentral</h1></a>
    </div>
 
    <div id="navbar" class="collapse navbar-collapse">
@@ -89,6 +87,7 @@
 
 			<div class="row">
 				<div class="col-sm-4 value-prop">
+
 					<img src="static/img/engage-icon.svg"/>
 					<h3>Engage at every customer touchpoint</h3>
 					<p>It shouldn't be a struggle to engage with your customers. Keep up with trends and engage with your customers on any channel.
@@ -113,7 +112,6 @@
 		</div>
 	</section>
 
-
 	<section class="testimonial">
 		<div class="container-fluid">
 			<div class="row">
@@ -122,7 +120,7 @@
 					<img class="testimonial-logo delta" src="static/img/delta-testimonial.svg" alt="Delta">
 					<p class="lead">“Customer experience doesn’t begin and end with a flight. It’s an ongoing relationship built on a lifetime of trust, loyalty and service.”											
 					</p>
-					<cite>Jerry Fletcher</cite>
+					<cite>Jerry Fletcher, Social Media Manager</cite>
 					<p><a class="btn btn-primary wistia-popover[height=405,playerColor=7b796a,width=720]" href="http://fast.wistia.net/embed/iframe/hvf9m6n027?popover=true" role="button">Watch Case Study</a>
 						<script charset="ISO-8859-1" src="http://fast.wistia.com/assets/external/popover-v1.js"></script>
 					</p>
@@ -143,7 +141,12 @@
 				<div class="col-md-5 col-sm-12 latest-news">
 					<h2>Latest News</h2>
 					<h5>1/20/15</h5>
+<<<<<<< HEAD
 					<h3><a href="static/assets/Sparkcentral_Series_B_Funding.pdf" target="parent">Sparkcentral Secures $12M Series B Funding to Grow Customer Experience Platform</a></h3>
+=======
+
+					<h3><a href="{% static 'static/assets/Sparkcentral_Series_B_Funding.pdf" target="parent">Sparkcentral Secures $12M Series B Funding to Grow Customer Experience Platform</a></h3>
+>>>>>>> 26c5e75fbd4aa650d190550e6207d5fc34cc3ede
 					<p>
 						“Our vision is to shape the future of the customer experience, and this funding is a strong vote of confidence by enterprise investors whose values strongly align with our own,”
 					</p>
@@ -201,7 +204,6 @@
       <div class="col-sm-2">
         <ul>
           <li><h6>Resources</h6></li>
-          <!-- <li><a href="whitepapers.html">Whitepapers</a></li> -->
           <li><a href="company.html">Company</a></li>
           <li><a href="press.html">Press</a></li>
         </ul>
@@ -228,62 +230,52 @@
       <div class="col-sm-4">
         <h6>Sign up for our mailing list</h6>
 
-
-
-    
-
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-  #mc_embed_signup{background:none; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        <!-- Begin MailChimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+        #mc_embed_signup{background:none; clear:left; font:14px Helvetica,Arial,sans-serif; }
   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="//sparkcentral.us2.list-manage.com/subscribe/post?u=f3fb7b3cbf571b6f9a8596678&amp;id=dda39b475a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
+  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+  <div id="mc_embed_signup">
+    <form action="//sparkcentral.us2.list-manage.com/subscribe/post?u=f3fb7b3cbf571b6f9a8596678&amp;id=dda39b475a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
 
 
-  <input type="email" 
-   style="display:inline; margin:0; height: 40px; border-radius: 2px; border-radius:0; border-top-left-radius: 2px;
+        <input type="email" 
+        style="display:inline; margin:0; height: 40px; border-radius: 2px; border-radius:0; border-top-left-radius: 2px;
         border-bottom-left-radius: 2px; border: none; outline: none; padding-left: 3px;"
-  
-  value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
 
 
-    <input type="submit" 
-     style="display:inline; marign:0; background: #4690dc; width: 0; position:relative; left:-5px; height: 40px; border-top-left-radius: 0; border-bottom-left-radius: 0; min-width: 70px;"
+        <input type="submit" 
+        style="
+        color: #fff; 
+        outline:none; 
+        border: solid 1px #4690dc;
+        border-radius: 2px;
+        display:inline; 
+        marign:0; 
+        background: #4690dc; 
+        width: 0; 
+        position:relative; left:-5px; 
+        height: 40px; 
+        border-top-left-radius: 0; 
+        border-bottom-left-radius: 0; 
+        min-width: 70px;"
 
 
-    value="Send" name="subscribe" id="mc-embedded-subscribe" class="button">
+        value="Send" name="subscribe" id="mc-embedded-subscribe" class="button">
 
 
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_f3fb7b3cbf571b6f9a8596678_dda39b475a" tabindex="-1" value=""></div>
-    </div>
-</form>
-</div>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_f3fb7b3cbf571b6f9a8596678_dda39b475a" tabindex="-1" value=""></div>
+      </div>
+    </form>
+  </div>
 
-<!--End mc_embed_signup-->
-
-
-
-
+  <!--End mc_embed_signup-->
 </div><!--col-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div><!--row-->
 </div>
 </footer>
@@ -337,8 +329,5 @@ document.writeln('<scr'+'ipt src="'+pcheck+'" type="text\/javascript"><\/scr'+'i
 //]]>
 </script>
 <!--VISISTAT SNIPPET//-->
-
-
-
 </body>
 </html>
