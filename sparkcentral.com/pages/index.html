@@ -19,20 +19,12 @@
 		<div class="container">
 			<div class="row">
 				<ul>
-					<li class="col-sm-2 col-xs-4"><img src="{% static 'static/img/gartner-logo.jpg' %}" alt="gartner logo" width="150px"/></li>
-
-
-					<li class="col-sm-2 col-xs-4"><img src="{% static '/img/home-clients/Delta.svg' %}" alt="Delta"/></li>
-
-					<li class="col-sm-2 col-xs-4"><img src="{% static '/img/home-clients/Dropbox.svg' %}" alt="Dropbox"/></li>
-
-					<li class="col-sm-2 col-xs-4"><img src="{% static '/img/home-clients/Netflix.svg' %}" alt="Netflix"/></li>
-
-					<li class="col-sm-2 col-xs-4"><img src="{% static '/img/home-clients/Sears.svg' %}" alt="Delta"/></li>
-
-					<li class="col-sm-2 col-xs-4"><img src="{% static '/img/home-clients/tmobile.svg' %}" alt="Delta"/></li>
-
-
+					<li class="col-sm-2 col-xs-4"><img src="{% static 'static/img/home-clients/Delta.svg' %}" alt="Delta"/></li>
+					<li class="col-sm-2 col-xs-4"><img src="{% static 'static/img/home-clients/uber.svg' %}" alt="Uber"/></li>
+					<li class="col-sm-2 col-xs-4"><img src="{% static 'static/img/home-clients/Dropbox.svg' %}" alt="Dropbox"/></li>
+					<li class="col-sm-2 col-xs-4"><img src="{% static 'static/img/home-clients/Netflix.svg' %}" alt="Netflix"/></li>
+					<li class="col-sm-2 col-xs-4"><img src="{% static 'static/img/home-clients/Sears.svg' %}" alt="Sears"/></li>
+					<li class="col-sm-2 col-xs-4"><img src="{% static 'static/img/home-clients/tmobile.svg' %}" alt="T-Mobile"/></li>
 				</ul>
 			</div><!--row-->
 		</div>
@@ -52,7 +44,8 @@
 
 			<div class="row">
 				<div class="col-sm-4 value-prop">
-					<img src="{% static '/img/engage-icon.svg' %}"/>
+
+					<img src="{% static 'static/img/engage-icon.svg' %}"/>
 					<h3>Engage at every customer touchpoint</h3>
 					<p>It shouldn't be a struggle to engage with your customers. Keep up with trends and engage with your customers on any channel.
 
@@ -60,13 +53,13 @@
 				</div>
 
 				<div class="col-sm-4 value-prop">
-					<img src="{% static '/img/fastest-icon.svg' %}"/>
+					<img src="{% static 'static/img/fastest-icon.svg' %}"/>
 					<h3>Respond and resolve issues faster</h3>
 					<p>Our engagement dashboard enables agents to collaborate and resolve issues quickly. Advanced automation technology routes conversations to the right agents.</p>
 				</div>
 
 				<div class="col-sm-4 value-prop">
-					<img src="{% static '/img/delight-icon.svg' %}"/>
+					<img src="{% static 'static/img/delight-icon.svg' %}"/>
 					<h3>Delight and increase lifetime value</h3>
 					<p>By capturing the full customer relationship, Sparkcentral enables you to delight your customers by resolving issues before they&nbsp;escalate.
 
@@ -76,13 +69,12 @@
 		</div>
 	</section>
 
-
 	<section class="testimonial">
 		<div class="container-fluid">
 			<div class="row">
 
 				<div class="col-sm-5 col-sm-offset-1 col-xs-12 testimonial-info">
-					<img class="testimonial-logo delta" src="../static/img/delta-testimonial.svg" alt="Delta">
+					<img class="testimonial-logo delta" src="{% static 'static/img/delta-testimonial.svg' %}" alt="Delta">
 					<p class="lead">“Customer experience doesn’t begin and end with a flight. It’s an ongoing relationship built on a lifetime of trust, loyalty and service.”											
 					</p>
 					<cite>Jerry Fletcher, Social Media Manager</cite>
@@ -92,7 +84,7 @@
 				</div><!--col-->
 
 				<div class="col-sm-6 col-xs-12 testimonial-image">
-					<img class="testimonial-img" src="../static/img/jerry.jpg"/ alt="Jerry Fletcher, Delta Airlines">
+					<img class="testimonial-img" src="{% static 'static/img/jerry.jpg' %}" alt="Jerry Fletcher, Delta Airlines">
 				</div><!--col-->
 
 			</div><!--row-->
@@ -106,13 +98,14 @@
 				<div class="col-md-5 col-sm-12 latest-news">
 					<h2>Latest News</h2>
 					<h5>1/20/15</h5>
-					<h3><a href="../static/assets/Sparkcentral_Series_B_Funding.pdf" target="parent">Sparkcentral Raises $12M Series B Funding Led by Split Rock Partners</a></h3>
+
+					<h3><a href="{% static 'static/assets/Sparkcentral_Series_B_Funding.pdf" target="parent">Sparkcentral Secures $12M Series B Funding to Grow Customer Experience Platform</a></h3>
 					<p>
 						“Our vision is to shape the future of the customer experience, and this funding is a strong vote of confidence by enterprise investors whose values strongly align with our own,”
 					</p>
 
 					<cite>Sparkcentral Co-founder and CEO Davy Kestens</cite>
-					<a href="../static/assets/Sparkcentral_Series_B_Funding.pdf" target="parent" class="btn btn-md btn-secondary">Read More</a>			</div><!--col-->
+					<a href="{% static 'static/assets/Sparkcentral_Series_B_Funding.pdf" target="parent" class="btn btn-md btn-secondary">Read More</a>			</div><!--col-->
 
 					<div class="col-md-5 col-md-offset-1 past-news">
 						<h2>Past News</h2>
