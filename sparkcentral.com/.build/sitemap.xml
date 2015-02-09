@@ -11,6 +11,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>careers.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>clients.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -22,11 +27,6 @@
     </url>
     <url>
         <loc>demo.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>error/index.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
