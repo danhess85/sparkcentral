@@ -314,10 +314,6 @@ header.product {
 		margin-bottom: @margin;
 		padding-bottom: @margin;
 		border-bottom: @border;
-		&:last-child{
-			border-bottom: none;
-			margin-bottom: 0;
-		}
 		img {
 			max-height: 340px;
 		}
@@ -390,7 +386,7 @@ header.product {
 	}
 }
 
-.leadership {
+.leadership , .boardmembers{
 	margin-bottom: @margin;
 	h3{
 		margin-bottom: 0;
@@ -402,6 +398,21 @@ header.product {
 	img{
 		width: 100%;
 	}
+}
+
+.boardmembers{
+	h3{
+		display: inline-block;
+		margin-right: 5px;
+	}
+		.social{
+		font-family: "socialico";
+		font-size: 22px;
+		color: @gray-light;
+		position: relative;
+		top: 2px;
+	}
+
 }
 
 .investors {
