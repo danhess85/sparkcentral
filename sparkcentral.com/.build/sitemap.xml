@@ -26,6 +26,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>contact-us.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>demo.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
