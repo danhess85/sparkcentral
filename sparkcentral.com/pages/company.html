@@ -42,7 +42,7 @@
 			<div class="row ">
 				<h2 class="text-center">Leadership</h2>
 
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<img src="{% static 'static/img/davy.jpg' %}" alt="Davy Kestens">
 					<span class="left">
 						<h3>Davy Kestens</h3>
@@ -50,7 +50,7 @@
 					</span>
 				</div>
 
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<img src="{% static 'static/img/finn.jpg' %}" alt="Matt Finneran">
 					<span class="left">
 						<h3>Matt Finneran</h3>
@@ -58,8 +58,7 @@
 					</span>
 				</div>
 
-
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<img src="{% static 'static/img/sophie.jpg' %}" alt="Sophie Vu">
 					<span class="left">
 						<h3>Sophie Vu</h3>
@@ -67,69 +66,79 @@
 					</span>
 				</div>
 
-			</div><!--row-->
-		</section>
-
-
-
-		<section class="boardmembers border">
-			<div class="row ">
-				<h2 class="text-center">Board Members</h2>
-
-				<div class="col-sm-4">
-					<img src="{% static 'static/img/bob.jpg' %}" alt="Bob Spinner">
+				<div class="col-sm-3">
+					<img src="{% static 'static/img/marc.jpg' %}" alt="Marc Medrano">
 					<span class="left">
-						<h3>Bob Spinner</h3> 
-						<a class="social" href="http://www.linkedin.com/pub/bob-spinner/0/38/296/en">I</a>
-						<h4>Sigma West</h4>
-					</span>
-				</div>
-
-				<div class="col-sm-4">
-					<img src="{% static 'static/img/jim.jpg' %}" alt="Jim Somers">
-					<span class="left">
-						<h3>Jim Simons</h3>
-						<a class="social" href="https://www.linkedin.com/pub/jim-simons/2/600/295">I</a>
-						<h4>Split Rock Partners</h4>
-					</span>
-				</div>
-
-
-				<div class="col-sm-4">
-					<img src="{% static 'static/img/barmak.jpg' %}" alt="Barmak Meftah">
-					<span class="left">
-						<h3>Barmak Meftah</h3>
-						<a class="social" href="http://www.linkedin.com/pub/barmak-meftah/2/a07/764/en">I</a>
-						<h4>AlienVault</h4>
+						<h3>Marc Medrano</h3>
+						<h4>VP of Global Enterpise Sales</h4>
 					</span>
 				</div>
 
 			</div><!--row-->
-		</section>
 
 
-		<div class="row investors text-center">
-			<h2 class="text-center">Investors</h2>
+			</section>
 
 
-			<div class="col-sm-3">
-				<img class="logo-splitrock" src="{% static 'static/img/splitrock.jpg' %}" alt="Splitrock">
-			</div>
 
-			<div class="col-sm-3">
-				<img class="logo-sigma" src="{% static 'static/img/sigmawest.jpg' %}" alt="Sigma West">
-			</div>
+			<section class="boardmembers border">
+				<div class="row ">
+					<h2 class="text-center">Board Members</h2>
 
-			<div class="col-sm-3">
-				<img class="logo-foundersfund" src="{% static 'static/img/founders-fund.svg' %}" alt="Founders Fund">
-			</div>
+					<div class="col-sm-4">
+						<img src="{% static 'static/img/bob.jpg' %}" alt="Bob Spinner">
+						<span class="left">
+							<h3>Bob Spinner</h3> 
+							<a class="social" href="http://www.linkedin.com/pub/bob-spinner/0/38/296/en">I</a>
+							<h4>Sigma West</h4>
+						</span>
+					</div>
 
-			<div class="col-sm-3">
-				<img class="logo-socialcapital" src="{% static 'static/img/social-partnership.jpg' %}" alt="Social Capital Partnership">
-			</div>
-		</div><!--row-->
+					<div class="col-sm-4">
+						<img src="{% static 'static/img/jim.jpg' %}" alt="Jim Somers">
+						<span class="left">
+							<h3>Jim Simons</h3>
+							<a class="social" href="https://www.linkedin.com/pub/jim-simons/2/600/295">I</a>
+							<h4>Split Rock Partners</h4>
+						</span>
+					</div>
 
-	</div><!--container-->
+
+					<div class="col-sm-4">
+						<img src="{% static 'static/img/barmak.jpg' %}" alt="Barmak Meftah">
+						<span class="left">
+							<h3>Barmak Meftah</h3>
+							<a class="social" href="http://www.linkedin.com/pub/barmak-meftah/2/a07/764/en">I</a>
+							<h4>AlienVault</h4>
+						</span>
+					</div>
+
+				</div><!--row-->
+			</section>
 
 
-	{% endblock %}
+			<div class="row investors text-center">
+				<h2 class="text-center">Investors</h2>
+
+
+				<div class="col-sm-3">
+					<img class="logo-splitrock" src="{% static 'static/img/splitrock.jpg' %}" alt="Splitrock">
+				</div>
+
+				<div class="col-sm-3">
+					<img class="logo-sigma" src="{% static 'static/img/sigmawest.jpg' %}" alt="Sigma West">
+				</div>
+
+				<div class="col-sm-3">
+					<img class="logo-foundersfund" src="{% static 'static/img/founders-fund.svg' %}" alt="Founders Fund">
+				</div>
+
+				<div class="col-sm-3">
+					<img class="logo-socialcapital" src="{% static 'static/img/social-partnership.jpg' %}" alt="Social Capital Partnership">
+				</div>
+			</div><!--row-->
+
+		</div><!--container-->
+
+
+		{% endblock %}
