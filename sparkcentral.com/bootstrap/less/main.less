@@ -49,6 +49,21 @@ a {
 	text-shadow: @string;
 }
 
+.center-text {
+	text-align: center;
+}
+
+.sm-margin-bottom {
+	margin-bottom: 30px !important;
+}
+
+.announcement-icon {
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	margin-top: -2px;
+}
+
 header { 
 	background-color: @brand-primary;
 	padding: @padding-s 0;
@@ -280,13 +295,51 @@ body.team #team-page > a {
 	width: 100%;
 }
 
+.centered-text-banner {
+	text-transform: uppercase;
+	color: @brand-primary;
+	font-family: 'BrandonGrotesque-Bold', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	// margin: -25px auto 50px auto;
+	margin-bottom: 5px;
+}
+
+.left-text-banner {
+	text-transform: uppercase;
+	color: @gray-light;
+	font-family: 'BrandonGrotesque-Bold', sans-serif;
+	font-weight: bold;
+	margin-top: -25px;
+	margin-bottom: 5px;
+	padding-left: 1px;
+}
+
+.spring-release {
+	padding-top: 100px;
+	margin-bottom: 100px;
+	border-top: 1px solid @gray-lighter;
+	h2 {
+		color: @gray;
+		font-size: 28px;
+	}
+	.center-text {
+		h2 {
+			font-size: 36px;
+		}
+	}
+	h3 {
+		color: @gray;
+	}
+}
+
 // Product
 
 header.product {
 	margin-bottom: @margin;
 }
 
-.gartner {
+.gartner, .forrester {
 	margin-bottom: @margin;
 	text-align: center;
 	cite{
@@ -810,27 +863,45 @@ header.career {
 		font-size: 20px;
 	}
 	header {
-		background-color: @brand-primary;
+		background-color: @body-bg;
 		background-image: none;
-		margin-bottom: @margin-m;
+		margin-bottom: 0;
 		p{
 			font-size: 14px;
 			margin-top: 10px;
+			color: @brand-primary;
 		}
 		.logo {
 			display: inline-block;
 			margin-top: 0;
 			float: left;
 			h1 {
-				background-image: url('../img/logo-white.svg');
+				background-image: url('../img/logo.svg');
 				background-repeat: no-repeat;
-				background-size: 200px;
 				display: inline-block;
 				text-indent: -9999em;
-				min-width: 200px;
-				height: 43px;
+				min-width: 185px;
 				margin: -3px 0 0 0;
 			}
+		}
+	}
+	.intro-section {
+		background-color: @brand-primary;
+		padding: @padding-s 0;
+		background: linear-gradient( to right, rgba(70,144,220,.8) 0%, rgba(70,144,220,.5) 20%,rgba(70,144,220,.1) 50%, rgba(70,144,220,.5) 80%, rgba(70,144,220,.8) 100%), url('../img/background-pattern.png');
+		margin-bottom: @margin-m;
+		h1 {
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 30px;
+		margin: 20px 0 13px 0;
+		.text-shadow;
+		}
+		p {
+			color: #fff;
+			font-size: 18px;
+			text-align: center;
+			.text-shadow;
 		}
 	}
 }
@@ -839,6 +910,15 @@ input.button {
 	display: none;
 }
 
+.right-column {
+	display: inline-block;
+	float: right;
+}
+
+.left-column {
+	display: inline-block;
+	float: left;
+}
 
 // Whitepapers
 
@@ -878,6 +958,25 @@ input.button {
 
 .whitepaper-container {
 	margin-bottom: @margin;
+}
+
+.resources-links {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	text-align: center;
+	li {
+		display: inline-block;
+		margin: 0 10px;
+		a {
+			font-weight: 600;
+			color: #ffffff;
+			transition: 0.2s opacity;
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
 }
 
 // Press

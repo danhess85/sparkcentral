@@ -71,6 +71,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>resources.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>solutions.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -137,11 +142,6 @@
     </url>
     <url>
         <loc>whitepapers/worlds-collide-catastrophic-collision-marketing-customer-service.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>whitepapers.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
