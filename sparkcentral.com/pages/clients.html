@@ -14,6 +14,45 @@
 		<h1>Our clients love us. Find out why.</h1>
 	</header>
 
+	<section class="container gartner">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<img src="{% static 'static/img/gartner-logo.jpg' %}" alt="Gartner logo" width="150px"/>
+				<p>
+					“No rallying principle in the enterprise matters more than the creation of superior customer engagement. IT leaders will need to innovate in engaging customers on all channels and have the metrics to choose the right projects.”
+				</p>
+				<cite> Gartner, Predicts 2015: Weak Mobile Customer Service is Harming Customer Engagement, November 2014
+				</cite>
+				<div class="text-center">
+						<a href="{% static 'http://info.sparkcentral.com/gartner-newsletter' %}" target="_blank" class="btn btn-lg btn-default" style="margin-top: 25px;">Read the Research</a>
+					</div>
+
+			</div><!--col-->
+		</div><!--row-->
+	</section><!--container-->
+
+<!--
+	<section class="testimonial testimonial-clients-page">
+		<div class="container-fluid">
+			<div id="testimonial-video-section" class="row">
+
+				<div class="col-sm-5 col-sm-offset-1 col-xs-12 testimonial-info">
+					<img class="testimonial-logo delta" src="{% static 'static/img/tmobile-testimonial.svg' %}" alt="Delta logo">
+					<p class="lead">“It’s not so much the problems that we can see, it’s the problems that we can’t see and what’s vitally important is to have a partner that can help us resolve those problems.”											
+					</p>
+					<cite>Mark Davis, Customer Service Operations</cite>
+					<p><a class="btn btn-primary wistia-popover[height=405,playerColor=7b796a,width=720]" href="http://fast.wistia.net/embed/iframe/g6iodjwasi?popover=true" role="button">Watch Case Study</a>
+						<script charset="ISO-8859-1" src="http://fast.wistia.com/assets/external/popover-v1.js"></script>
+					</p>
+				</div>
+				<div class="col-sm-6 col-xs-12 testimonial-image">
+					<a class="wistia-popover[height=405,playerColor=7b796a,width=720]" href="http://fast.wistia.net/embed/iframe/g6iodjwasi?popover=true" role="button"><img class="testimonial-img" src="{% static 'static/img/TMobileVideoThumbnail.jpg' %}" alt="Mark Davis, T-Mobile"></a>
+				</div>
+
+			</div>
+		</div>
+	</section>-->
+
 	<div class="container">
 		<div class="row client client-wide lyft-styled clients-group-one">
 			<div class="col-md-5 col-sm-12">		
@@ -91,6 +130,13 @@
 			</div> --><!--col-->
 
 			<div class="col-sm-4">
+				<img src="{% static 'static/img/clients/arbys.svg' %}" alt="Arby's Logo"/>
+				<p>
+					“Our brand purpose is “Inspiring Smiles Through Delicious Experiences™.” Sparkcentral better enables us to leave a positive, lasting impression with our guests and fans. And hopefully a smile, too!”
+				</p>
+			</div><!--col-->
+
+			<div class="col-sm-4">
 				<img src="{% static 'static/img/clients/lululemon.svg' %}" alt=" LuluLemon Logo"/>
 				<p>
 					“Our customers live life to the fullest. With Sparkcentral, we’re able to give our customers an experience every time they connect with us.”
@@ -98,17 +144,12 @@
 			</div><!--col-->
 
 			<div class="col-sm-4">
-				<img src="{% static 'static/img/clients/brussels-airport.png' %}" alt="Brussels Airport Logo"/>
-				<p>
-					“Distance may divide us, but communication channels connect us. With Sparkcentral, we are there at every stage of the journey with our customers.” 
-				</p>
-			</div><!--col-->
-			<div class="col-sm-4">
-				<img src="{% static 'static/img/clients/jetblue.svg' %}" alt="JetBlue Logo"/>
-				<p>
-					“We love it when our customers contact us and we can have personalized conversations with them.”
-				</p>
-			</div><!--col-->
+					<img src="{% static 'static/img/clients/uber.svg' %}" alt="Uber logo"/>
+					<p>
+						“Uber’s success has come from the way we deliver the customer experience.”
+					</p>
+				</div><!--col-->
+
 		</div><!--row-->
 
 		<div class="row client-list clients-group-one mobile-margin">
@@ -121,10 +162,18 @@
 			</div> --><!--col-->
 
 			<div class="col-sm-4">
+				<img src="{% static 'static/img/clients/jetblue.svg' %}" alt="JetBlue Logo"/>
+				<p>
+					“We love it when our customers contact us and we can have personalized conversations with them.”
+				</p>
+			</div><!--col-->
+
+			<div class="col-sm-4">
 				<img src="{% static 'static/img/clients/publix.svg' %}" alt="Publix Logo"/>
 				<p>
 					“Whether customers contact us on mobile, social or any other device, we want them to experience the same great customer service they would receive if they walked into one of our stores.”			</p>
 				</div><!--col-->
+
 				<div class="col-sm-4">
 					<img src="{% static 'static/img/clients/gogo.svg' %}" alt="Gogo Logo"/>
 					<p>
@@ -132,11 +181,6 @@
 					</p>
 				</div><!--col-->
 
-				<div class="col-sm-4">
-					<img src="{% static 'static/img/clients/nyu.svg' %}" alt="NYU Logo"/>
-					<p>
-						"Rapid response, shorter handle times and happy agents and customers are a result of a platform focused on customer service."</p>
-					</div><!--col-->
 				</div><!--row-->
 
 				<div class="row client client-wide mailbox-styled clients-group-two">
@@ -221,9 +265,9 @@
 				</div><!--col-->
 
 				<div class="col-sm-4">
-					<img src="{% static 'static/img/clients/uber.svg' %}" alt="Uber logo"/>
+					<img src="{% static 'static/img/clients/brussels-airport.png' %}" alt="Brussels Airport Logo"/>
 					<p>
-						“Uber’s success has come from the way we deliver the customer experience.”
+						“Distance may divide us, but communication channels connect us. With Sparkcentral, we are there at every stage of the journey with our customers.” 
 					</p>
 				</div><!--col-->
 

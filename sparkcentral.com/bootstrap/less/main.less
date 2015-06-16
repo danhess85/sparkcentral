@@ -293,7 +293,7 @@ body.team #team-page > a {
 		padding-right: 0;
 	}
 	.testimonial-logo {
-		margin-top: @margin-m;
+		margin-top: 60px;
 		max-width: 250px;
 		position: relative;
 		left: -79px;
@@ -348,10 +348,10 @@ body.team #team-page > a {
 // Product
 
 header.product {
-	margin-bottom: @margin;
+	margin-bottom: @margin-m;
 }
 
-.gartner, .forrester {
+.gartner, .forrester, .product-tour {
 	margin-bottom: @margin;
 	text-align: center;
 	cite{
@@ -360,6 +360,22 @@ header.product {
 	img{
 		margin-bottom: @margin-s;
 	}
+}
+
+.product-tour, .gartner {
+	.btn.btn-lg.btn-default {
+		color: @brand-primary;
+		border-color: @brand-primary;
+		&:hover {
+			color: #ffffff;
+			background-color: @brand-primary;
+		}
+	}
+}
+
+.product-tour-icon {
+	width: 300px;
+	height: 156px;
 }
 
 .tour {
