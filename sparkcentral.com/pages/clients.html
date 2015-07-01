@@ -31,8 +31,8 @@
 		</div><!--row-->
 	</section><!--container-->
 
-<!--
-	<section class="testimonial testimonial-clients-page">
+
+<section class="testimonial testimonial-clients-page">
 		<div class="container-fluid">
 			<div id="testimonial-video-section" class="row">
 
@@ -40,18 +40,17 @@
 					<img class="testimonial-logo delta" src="{% static 'static/img/tmobile-testimonial.svg' %}" alt="Delta logo">
 					<p class="lead">“It’s not so much the problems that we can see, it’s the problems that we can’t see and what’s vitally important is to have a partner that can help us resolve those problems.”											
 					</p>
-					<cite>Mark Davis, Customer Service Operations</cite>
-					<p><a class="btn btn-primary wistia-popover[height=405,playerColor=7b796a,width=720]" href="http://fast.wistia.net/embed/iframe/g6iodjwasi?popover=true" role="button">Watch Case Study</a>
-						<script charset="ISO-8859-1" src="http://fast.wistia.com/assets/external/popover-v1.js"></script>
+					<cite>Mark Davis, Vice President, Customer Service Operations</cite>
+					<p><a class="btn btn-primary video-link" data-video-id="VH1XlTCxTb8" role="button">Watch Case Study</a>
 					</p>
 				</div>
 				<div class="col-sm-6 col-xs-12 testimonial-image">
-					<a class="wistia-popover[height=405,playerColor=7b796a,width=720]" href="http://fast.wistia.net/embed/iframe/g6iodjwasi?popover=true" role="button"><img class="testimonial-img" src="{% static 'static/img/TMobileVideoThumbnail.jpg' %}" alt="Mark Davis, T-Mobile"></a>
+					<img class="testimonial-img video-link" data-video-id="VH1XlTCxTb8" src="{% static 'static/img/TMobileVideoThumbnail.jpg' %}" alt="Mark Davis, T-Mobile">
 				</div>
 
 			</div>
 		</div>
-	</section>-->
+	</section>
 
 	<div class="container">
 		<div class="row client client-wide lyft-styled clients-group-one">
@@ -306,5 +305,19 @@
 						<h2 class="text-center">Join the list of amazing customers using Sparkcentral</h2>
 						<a href="{% static 'demo.html' %}" class="btn btn-lg btn-default">Request Demo</a>
 					</section>
+
+					<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="{% static 'static/js/jquery-video-lightning.js' %}"></script>
+
+		<script>
+			$(function() {
+				$(".video-link").jqueryVideoLightning({
+				autoplay: 1,
+				backdrop_color: "#000",
+				backdrop_opacity: 0.7,
+				glow: 0,
+				});
+			});
+		</script>
 
 					{% endblock %}
